@@ -1,6 +1,6 @@
 ﻿namespace BTL_ClockManage
 {
-    partial class Customer_Manager
+    partial class Staff_Manager
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,16 +31,53 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txt_find_customer = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_find_staff = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
             this.btn_refresh = new Guna.UI2.WinForms.Guna2Button();
             this.btn_edit = new Guna.UI2.WinForms.Guna2Button();
             this.btn_add = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.txt_find_staff);
+            this.guna2Panel1.Controls.Add(this.btn_delete);
+            this.guna2Panel1.Controls.Add(this.btn_refresh);
+            this.guna2Panel1.Controls.Add(this.btn_edit);
+            this.guna2Panel1.Controls.Add(this.btn_add);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel1.Location = new System.Drawing.Point(1031, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(339, 755);
+            this.guna2Panel1.TabIndex = 10;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // txt_find_staff
+            // 
+            this.txt_find_staff.BorderRadius = 5;
+            this.txt_find_staff.BorderThickness = 2;
+            this.txt_find_staff.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_find_staff.DefaultText = "find staff ...";
+            this.txt_find_staff.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_find_staff.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_find_staff.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_find_staff.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_find_staff.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_find_staff.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_find_staff.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_find_staff.Location = new System.Drawing.Point(27, 12);
+            this.txt_find_staff.Name = "txt_find_staff";
+            this.txt_find_staff.PasswordChar = '\0';
+            this.txt_find_staff.PlaceholderText = "";
+            this.txt_find_staff.SelectedText = "";
+            this.txt_find_staff.Size = new System.Drawing.Size(284, 46);
+            this.txt_find_staff.TabIndex = 6;
+            this.txt_find_staff.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_find_staff.TextChanged += new System.EventHandler(this.txt_find_staff_TextChanged);
             // 
             // guna2DataGridView1
             // 
@@ -73,7 +110,7 @@
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.Size = new System.Drawing.Size(1025, 755);
-            this.guna2DataGridView1.TabIndex = 2;
+            this.guna2DataGridView1.TabIndex = 9;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -96,43 +133,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.txt_find_customer);
-            this.guna2Panel1.Controls.Add(this.btn_delete);
-            this.guna2Panel1.Controls.Add(this.btn_refresh);
-            this.guna2Panel1.Controls.Add(this.btn_edit);
-            this.guna2Panel1.Controls.Add(this.btn_add);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel1.Location = new System.Drawing.Point(1031, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(339, 755);
-            this.guna2Panel1.TabIndex = 8;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
-            // 
-            // txt_find_customer
-            // 
-            this.txt_find_customer.BorderRadius = 5;
-            this.txt_find_customer.BorderThickness = 2;
-            this.txt_find_customer.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_find_customer.DefaultText = "find customer ...";
-            this.txt_find_customer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_find_customer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_find_customer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_find_customer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_find_customer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_find_customer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_find_customer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_find_customer.Location = new System.Drawing.Point(27, 12);
-            this.txt_find_customer.Name = "txt_find_customer";
-            this.txt_find_customer.PasswordChar = '\0';
-            this.txt_find_customer.PlaceholderText = "";
-            this.txt_find_customer.SelectedText = "";
-            this.txt_find_customer.Size = new System.Drawing.Size(284, 46);
-            this.txt_find_customer.TabIndex = 6;
-            this.txt_find_customer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_find_customer.TextChanged += new System.EventHandler(this.txt_find_customer_TextChanged);
             // 
             // btn_delete
             // 
@@ -227,28 +227,28 @@
             this.btn_add.Text = "Add new";
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
-            // Customer_Manager
+            // Staff_Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Name = "Customer_Manager";
+            this.Name = "Staff_Manager";
             this.Size = new System.Drawing.Size(1370, 755);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2TextBox txt_find_customer;
+        private Guna.UI2.WinForms.Guna2TextBox txt_find_staff;
         private Guna.UI2.WinForms.Guna2Button btn_delete;
         private Guna.UI2.WinForms.Guna2Button btn_refresh;
         private Guna.UI2.WinForms.Guna2Button btn_edit;
         private Guna.UI2.WinForms.Guna2Button btn_add;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
     }
 }

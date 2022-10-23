@@ -10,50 +10,46 @@ using System.Windows.Forms;
 
 namespace BTL_ClockManage
 {
-    public partial class Customer_Manager : UserControl
+    public partial class Staff_Manager : UserControl
     {
-        public Customer_Manager()
+        public Staff_Manager()
         {
             InitializeComponent();
         }
 
-        private void txt_find_customer_TextChanged(object sender, EventArgs e)
+        private void txt_find_staff_TextChanged(object sender, EventArgs e)
         {
-            txt_find_customer.Text = "";
+            txt_find_staff.Text = "";
         }
 
         private void btn_refresh_Click(object sender, EventArgs e)
         {
-            txt_find_customer.Text = "";
+            txt_find_staff.Text = "";
         }
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            Customer_Add add = new Customer_Add();
-            add.Show();
-            txt_find_customer.Text = "";
+            txt_find_staff.Text = "";
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
-            Customer_Edit edit = new Customer_Edit();
-            edit.Show();
-            txt_find_customer.Text = "";
+            txt_find_staff.Text = "";
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            txt_find_customer.Text = "";
+            txt_find_staff.Text = "";
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
-            txt_find_customer.Text = "";
+            txt_find_staff.Text = "";
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_find_customer.Text = "";
+            txt_find_staff.Text = "";
         }
     }
 }

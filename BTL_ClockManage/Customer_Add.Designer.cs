@@ -28,44 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rbtn_male = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.rbtn_female = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.lbl_gender = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl_phone_empty = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl_address_empty = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl_name_empty = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl_id_empty = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_phone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_phone = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_address = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_address = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_id = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btn_minimize = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_close = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_address = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.rbtn_female = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.lbl_id_empty = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl_address_empty = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txt_address = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_id = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_phone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lbl_gender = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl_phone = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_add_form2 = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btn_close = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_phone_empty = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.rbtn_male = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.lbl_name_empty = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btn_minimize = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
-            // rbtn_male
+            // lbl_id
             // 
-            this.rbtn_male.AutoSize = true;
-            this.rbtn_male.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbtn_male.CheckedState.BorderThickness = 0;
-            this.rbtn_male.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbtn_male.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbtn_male.CheckedState.InnerOffset = -4;
-            this.rbtn_male.Font = new System.Drawing.Font("Times New Roman", 10.8F);
-            this.rbtn_male.Location = new System.Drawing.Point(270, 255);
-            this.rbtn_male.Name = "rbtn_male";
-            this.rbtn_male.Size = new System.Drawing.Size(66, 24);
-            this.rbtn_male.TabIndex = 40;
-            this.rbtn_male.Text = "Male";
-            this.rbtn_male.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbtn_male.UncheckedState.BorderThickness = 2;
-            this.rbtn_male.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbtn_male.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.lbl_id.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_id.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_id.Location = new System.Drawing.Point(22, 88);
+            this.lbl_id.Name = "lbl_id";
+            this.lbl_id.Size = new System.Drawing.Size(26, 22);
+            this.lbl_id.TabIndex = 25;
+            this.lbl_id.Text = "ID:";
+            // 
+            // lbl_address
+            // 
+            this.lbl_address.AutoSize = false;
+            this.lbl_address.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_address.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_address.Location = new System.Drawing.Point(22, 330);
+            this.lbl_address.Name = "lbl_address";
+            this.lbl_address.Size = new System.Drawing.Size(96, 22);
+            this.lbl_address.TabIndex = 29;
+            this.lbl_address.Text = "Address:";
             // 
             // rbtn_female
             // 
@@ -86,53 +88,6 @@
             this.rbtn_female.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.rbtn_female.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
-            // lbl_gender
-            // 
-            this.lbl_gender.AutoSize = false;
-            this.lbl_gender.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_gender.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_gender.Location = new System.Drawing.Point(22, 255);
-            this.lbl_gender.Name = "lbl_gender";
-            this.lbl_gender.Size = new System.Drawing.Size(80, 22);
-            this.lbl_gender.TabIndex = 38;
-            this.lbl_gender.Text = "Gender:";
-            // 
-            // lbl_phone_empty
-            // 
-            this.lbl_phone_empty.AutoSize = false;
-            this.lbl_phone_empty.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_phone_empty.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_phone_empty.ForeColor = System.Drawing.Color.Red;
-            this.lbl_phone_empty.Location = new System.Drawing.Point(150, 446);
-            this.lbl_phone_empty.Name = "lbl_phone_empty";
-            this.lbl_phone_empty.Size = new System.Drawing.Size(133, 19);
-            this.lbl_phone_empty.TabIndex = 36;
-            this.lbl_phone_empty.Text = "* Phone is empty!";
-            // 
-            // lbl_address_empty
-            // 
-            this.lbl_address_empty.AutoSize = false;
-            this.lbl_address_empty.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_address_empty.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_address_empty.ForeColor = System.Drawing.Color.Red;
-            this.lbl_address_empty.Location = new System.Drawing.Point(150, 367);
-            this.lbl_address_empty.Name = "lbl_address_empty";
-            this.lbl_address_empty.Size = new System.Drawing.Size(144, 19);
-            this.lbl_address_empty.TabIndex = 35;
-            this.lbl_address_empty.Text = "* Address is empty!";
-            // 
-            // lbl_name_empty
-            // 
-            this.lbl_name_empty.AutoSize = false;
-            this.lbl_name_empty.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_name_empty.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name_empty.ForeColor = System.Drawing.Color.Red;
-            this.lbl_name_empty.Location = new System.Drawing.Point(150, 210);
-            this.lbl_name_empty.Name = "lbl_name_empty";
-            this.lbl_name_empty.Size = new System.Drawing.Size(133, 19);
-            this.lbl_name_empty.TabIndex = 34;
-            this.lbl_name_empty.Text = "* Name is empty!";
-            // 
             // lbl_id_empty
             // 
             this.lbl_id_empty.AutoSize = false;
@@ -145,38 +100,17 @@
             this.lbl_id_empty.TabIndex = 33;
             this.lbl_id_empty.Text = "* ID is empty!";
             // 
-            // txt_phone
+            // lbl_address_empty
             // 
-            this.txt_phone.BorderColor = System.Drawing.Color.Black;
-            this.txt_phone.BorderRadius = 3;
-            this.txt_phone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_phone.DefaultText = "";
-            this.txt_phone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_phone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_phone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_phone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_phone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_phone.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_phone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_phone.Location = new System.Drawing.Point(150, 393);
-            this.txt_phone.Name = "txt_phone";
-            this.txt_phone.PasswordChar = '\0';
-            this.txt_phone.PlaceholderText = "";
-            this.txt_phone.SelectedText = "";
-            this.txt_phone.Size = new System.Drawing.Size(350, 47);
-            this.txt_phone.TabIndex = 32;
-            this.txt_phone.TextChanged += new System.EventHandler(this.txt_phone_TextChanged);
-            // 
-            // lbl_phone
-            // 
-            this.lbl_phone.AutoSize = false;
-            this.lbl_phone.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_phone.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_phone.Location = new System.Drawing.Point(22, 408);
-            this.lbl_phone.Name = "lbl_phone";
-            this.lbl_phone.Size = new System.Drawing.Size(80, 22);
-            this.lbl_phone.TabIndex = 31;
-            this.lbl_phone.Text = "Phone:";
+            this.lbl_address_empty.AutoSize = false;
+            this.lbl_address_empty.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_address_empty.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_address_empty.ForeColor = System.Drawing.Color.Red;
+            this.lbl_address_empty.Location = new System.Drawing.Point(150, 367);
+            this.lbl_address_empty.Name = "lbl_address_empty";
+            this.lbl_address_empty.Size = new System.Drawing.Size(144, 19);
+            this.lbl_address_empty.TabIndex = 35;
+            this.lbl_address_empty.Text = "* Address is empty!";
             // 
             // txt_address
             // 
@@ -200,16 +134,27 @@
             this.txt_address.TabIndex = 30;
             this.txt_address.TextChanged += new System.EventHandler(this.txt_address_TextChanged);
             // 
-            // lbl_address
+            // txt_id
             // 
-            this.lbl_address.AutoSize = false;
-            this.lbl_address.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_address.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_address.Location = new System.Drawing.Point(22, 330);
-            this.lbl_address.Name = "lbl_address";
-            this.lbl_address.Size = new System.Drawing.Size(96, 22);
-            this.lbl_address.TabIndex = 29;
-            this.lbl_address.Text = "Address:";
+            this.txt_id.BorderColor = System.Drawing.Color.Black;
+            this.txt_id.BorderRadius = 3;
+            this.txt_id.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_id.DefaultText = "";
+            this.txt_id.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_id.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_id.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_id.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_id.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_id.Location = new System.Drawing.Point(150, 77);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.PasswordChar = '\0';
+            this.txt_id.PlaceholderText = "";
+            this.txt_id.SelectedText = "";
+            this.txt_id.Size = new System.Drawing.Size(350, 47);
+            this.txt_id.TabIndex = 26;
+            this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
             // 
             // txt_name
             // 
@@ -233,86 +178,49 @@
             this.txt_name.TabIndex = 28;
             this.txt_name.TextChanged += new System.EventHandler(this.txt_name_TextChanged);
             // 
-            // lbl_name
+            // txt_phone
             // 
-            this.lbl_name.AutoSize = false;
-            this.lbl_name.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_name.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(22, 168);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(80, 22);
-            this.lbl_name.TabIndex = 27;
-            this.lbl_name.Text = "Name:";
+            this.txt_phone.BorderColor = System.Drawing.Color.Black;
+            this.txt_phone.BorderRadius = 3;
+            this.txt_phone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_phone.DefaultText = "";
+            this.txt_phone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_phone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_phone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_phone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_phone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_phone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_phone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_phone.Location = new System.Drawing.Point(150, 393);
+            this.txt_phone.Name = "txt_phone";
+            this.txt_phone.PasswordChar = '\0';
+            this.txt_phone.PlaceholderText = "";
+            this.txt_phone.SelectedText = "";
+            this.txt_phone.Size = new System.Drawing.Size(350, 47);
+            this.txt_phone.TabIndex = 32;
+            this.txt_phone.TextChanged += new System.EventHandler(this.txt_phone_TextChanged);
             // 
-            // txt_id
+            // lbl_gender
             // 
-            this.txt_id.BorderColor = System.Drawing.Color.Black;
-            this.txt_id.BorderRadius = 3;
-            this.txt_id.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_id.DefaultText = "";
-            this.txt_id.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_id.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_id.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_id.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_id.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_id.Location = new System.Drawing.Point(150, 77);
-            this.txt_id.Name = "txt_id";
-            this.txt_id.PasswordChar = '\0';
-            this.txt_id.PlaceholderText = "";
-            this.txt_id.SelectedText = "";
-            this.txt_id.Size = new System.Drawing.Size(350, 47);
-            this.txt_id.TabIndex = 26;
-            this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
+            this.lbl_gender.AutoSize = false;
+            this.lbl_gender.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_gender.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_gender.Location = new System.Drawing.Point(22, 255);
+            this.lbl_gender.Name = "lbl_gender";
+            this.lbl_gender.Size = new System.Drawing.Size(80, 22);
+            this.lbl_gender.TabIndex = 38;
+            this.lbl_gender.Text = "Gender:";
             // 
-            // lbl_id
+            // lbl_phone
             // 
-            this.lbl_id.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_id.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_id.Location = new System.Drawing.Point(22, 88);
-            this.lbl_id.Name = "lbl_id";
-            this.lbl_id.Size = new System.Drawing.Size(26, 22);
-            this.lbl_id.TabIndex = 25;
-            this.lbl_id.Text = "ID:";
-            // 
-            // btn_minimize
-            // 
-            this.btn_minimize.BackColor = System.Drawing.Color.Transparent;
-            this.btn_minimize.BorderRadius = 4;
-            this.btn_minimize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_minimize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_minimize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_minimize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_minimize.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btn_minimize.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_minimize.ForeColor = System.Drawing.Color.White;
-            this.btn_minimize.Location = new System.Drawing.Point(441, 21);
-            this.btn_minimize.Name = "btn_minimize";
-            this.btn_minimize.Size = new System.Drawing.Size(49, 40);
-            this.btn_minimize.TabIndex = 24;
-            this.btn_minimize.Text = "-";
-            this.btn_minimize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_minimize.TextOffset = new System.Drawing.Point(2, -4);
-            this.btn_minimize.UseTransparentBackground = true;
-            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
-            // 
-            // btn_close
-            // 
-            this.btn_close.BorderRadius = 4;
-            this.btn_close.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_close.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_close.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_close.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_close.FillColor = System.Drawing.Color.LightSlateGray;
-            this.btn_close.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_close.ForeColor = System.Drawing.Color.White;
-            this.btn_close.Location = new System.Drawing.Point(496, 21);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(49, 40);
-            this.btn_close.TabIndex = 23;
-            this.btn_close.Text = "X";
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            this.lbl_phone.AutoSize = false;
+            this.lbl_phone.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_phone.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_phone.Location = new System.Drawing.Point(22, 408);
+            this.lbl_phone.Name = "lbl_phone";
+            this.lbl_phone.Size = new System.Drawing.Size(80, 22);
+            this.lbl_phone.TabIndex = 31;
+            this.lbl_phone.Text = "Phone:";
             // 
             // btn_add_form2
             // 
@@ -335,6 +243,98 @@
             this.btn_add_form2.Size = new System.Drawing.Size(125, 48);
             this.btn_add_form2.TabIndex = 37;
             this.btn_add_form2.Text = "Add ";
+            // 
+            // lbl_name
+            // 
+            this.lbl_name.AutoSize = false;
+            this.lbl_name.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_name.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.Location = new System.Drawing.Point(22, 168);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(80, 22);
+            this.lbl_name.TabIndex = 27;
+            this.lbl_name.Text = "Name:";
+            // 
+            // btn_close
+            // 
+            this.btn_close.BorderRadius = 4;
+            this.btn_close.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_close.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_close.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_close.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_close.FillColor = System.Drawing.Color.LightSlateGray;
+            this.btn_close.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_close.ForeColor = System.Drawing.Color.White;
+            this.btn_close.Location = new System.Drawing.Point(496, 21);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(49, 40);
+            this.btn_close.TabIndex = 23;
+            this.btn_close.Text = "X";
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // lbl_phone_empty
+            // 
+            this.lbl_phone_empty.AutoSize = false;
+            this.lbl_phone_empty.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_phone_empty.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_phone_empty.ForeColor = System.Drawing.Color.Red;
+            this.lbl_phone_empty.Location = new System.Drawing.Point(150, 446);
+            this.lbl_phone_empty.Name = "lbl_phone_empty";
+            this.lbl_phone_empty.Size = new System.Drawing.Size(133, 19);
+            this.lbl_phone_empty.TabIndex = 36;
+            this.lbl_phone_empty.Text = "* Phone is empty!";
+            // 
+            // rbtn_male
+            // 
+            this.rbtn_male.AutoSize = true;
+            this.rbtn_male.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbtn_male.CheckedState.BorderThickness = 0;
+            this.rbtn_male.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbtn_male.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rbtn_male.CheckedState.InnerOffset = -4;
+            this.rbtn_male.Font = new System.Drawing.Font("Times New Roman", 10.8F);
+            this.rbtn_male.Location = new System.Drawing.Point(270, 255);
+            this.rbtn_male.Name = "rbtn_male";
+            this.rbtn_male.Size = new System.Drawing.Size(66, 24);
+            this.rbtn_male.TabIndex = 40;
+            this.rbtn_male.Text = "Male";
+            this.rbtn_male.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rbtn_male.UncheckedState.BorderThickness = 2;
+            this.rbtn_male.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rbtn_male.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // lbl_name_empty
+            // 
+            this.lbl_name_empty.AutoSize = false;
+            this.lbl_name_empty.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_name_empty.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name_empty.ForeColor = System.Drawing.Color.Red;
+            this.lbl_name_empty.Location = new System.Drawing.Point(150, 210);
+            this.lbl_name_empty.Name = "lbl_name_empty";
+            this.lbl_name_empty.Size = new System.Drawing.Size(133, 19);
+            this.lbl_name_empty.TabIndex = 34;
+            this.lbl_name_empty.Text = "* Name is empty!";
+            // 
+            // btn_minimize
+            // 
+            this.btn_minimize.BackColor = System.Drawing.Color.Transparent;
+            this.btn_minimize.BorderRadius = 4;
+            this.btn_minimize.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_minimize.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_minimize.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_minimize.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_minimize.FillColor = System.Drawing.Color.LightSlateGray;
+            this.btn_minimize.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_minimize.ForeColor = System.Drawing.Color.White;
+            this.btn_minimize.Location = new System.Drawing.Point(441, 21);
+            this.btn_minimize.Name = "btn_minimize";
+            this.btn_minimize.Size = new System.Drawing.Size(49, 40);
+            this.btn_minimize.TabIndex = 24;
+            this.btn_minimize.Text = "-";
+            this.btn_minimize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_minimize.TextOffset = new System.Drawing.Point(2, -4);
+            this.btn_minimize.UseTransparentBackground = true;
+            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
             // 
             // Customer_Add
             // 
@@ -370,23 +370,23 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2RadioButton rbtn_male;
-        private Guna.UI2.WinForms.Guna2RadioButton rbtn_female;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_gender;
-        private Guna.UI2.WinForms.Guna2Button btn_add_form2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_phone_empty;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_address_empty;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_name_empty;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_id_empty;
-        private Guna.UI2.WinForms.Guna2TextBox txt_phone;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_phone;
-        private Guna.UI2.WinForms.Guna2TextBox txt_address;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_address;
-        private Guna.UI2.WinForms.Guna2TextBox txt_name;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_name;
-        private Guna.UI2.WinForms.Guna2TextBox txt_id;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_id;
-        private Guna.UI2.WinForms.Guna2Button btn_minimize;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_address;
+        private Guna.UI2.WinForms.Guna2RadioButton rbtn_female;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_id_empty;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_address_empty;
+        private Guna.UI2.WinForms.Guna2TextBox txt_address;
+        private Guna.UI2.WinForms.Guna2TextBox txt_id;
+        private Guna.UI2.WinForms.Guna2TextBox txt_name;
+        private Guna.UI2.WinForms.Guna2TextBox txt_phone;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_gender;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_phone;
+        private Guna.UI2.WinForms.Guna2Button btn_add_form2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_name;
         private Guna.UI2.WinForms.Guna2Button btn_close;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_phone_empty;
+        private Guna.UI2.WinForms.Guna2RadioButton rbtn_male;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_name_empty;
+        private Guna.UI2.WinForms.Guna2Button btn_minimize;
     }
 }
