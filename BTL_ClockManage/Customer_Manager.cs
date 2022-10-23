@@ -16,5 +16,40 @@ namespace BTL_ClockManage
         {
             InitializeComponent();
         }
+
+        private void txt_find_customer_TextChanged(object sender, EventArgs e)
+        {
+            txt_find_customer.Text = "";
+        }
+
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            txt_find_customer.Text = "";
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            txt_find_customer.Text = "";
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            txt_find_customer.Text = "";
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            txt_find_customer.Text = "";
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+            txt_find_customer.Text = "";
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_find_customer.Text = "";
+        }
     }
 }
