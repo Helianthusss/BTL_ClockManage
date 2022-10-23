@@ -87,17 +87,20 @@ namespace BTL_ClockManage
         {
             FormRegionAndBorder(this, borderRadius, e.Graphics, borderColor, borderSize);
         }
-
+        
+        //Button Close
         private void btn_close_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        //Button Minimize
         private void btn_minimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
+        //Button Id
         private void txt_id_TextChanged(object sender, EventArgs e)
         {
             if (txt_id.Text != "")
@@ -110,6 +113,7 @@ namespace BTL_ClockManage
             }
         }
 
+        //Button Name
         private void txt_name_TextChanged(object sender, EventArgs e)
         {
             if (txt_name.Text != "")
@@ -122,6 +126,7 @@ namespace BTL_ClockManage
             }
         }
 
+        //Button Address
         private void txt_address_TextChanged(object sender, EventArgs e)
         {
             if (txt_address.Text != "")
@@ -134,6 +139,7 @@ namespace BTL_ClockManage
             }
         }
 
+        //Button Phone
         private void txt_phone_TextChanged(object sender, EventArgs e)
         {
             if (txt_phone.Text != "")

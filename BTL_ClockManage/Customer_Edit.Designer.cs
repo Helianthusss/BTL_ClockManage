@@ -31,7 +31,6 @@
             this.rbtn_male = new Guna.UI2.WinForms.Guna2RadioButton();
             this.rbtn_female = new Guna.UI2.WinForms.Guna2RadioButton();
             this.lbl_gender = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btn_add_form2 = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_phone_empty = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl_address_empty = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl_name_empty = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -46,6 +45,7 @@
             this.lbl_id = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_minimize = new Guna.UI2.WinForms.Guna2Button();
             this.btn_close = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_add_form2 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // rbtn_male
@@ -96,28 +96,6 @@
             this.lbl_gender.Size = new System.Drawing.Size(80, 22);
             this.lbl_gender.TabIndex = 56;
             this.lbl_gender.Text = "Gender:";
-            // 
-            // btn_add_form2
-            // 
-            this.btn_add_form2.BorderColor = System.Drawing.Color.Firebrick;
-            this.btn_add_form2.BorderRadius = 6;
-            this.btn_add_form2.BorderThickness = 1;
-            this.btn_add_form2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_add_form2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_add_form2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_add_form2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_add_form2.FillColor = System.Drawing.Color.OrangeRed;
-            this.btn_add_form2.FocusedColor = System.Drawing.SystemColors.Control;
-            this.btn_add_form2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_form2.ForeColor = System.Drawing.Color.Black;
-            this.btn_add_form2.Image = global::BTL_ClockManage.Properties.Resources.Add_icon;
-            this.btn_add_form2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_add_form2.Location = new System.Drawing.Point(365, 493);
-            this.btn_add_form2.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_add_form2.Name = "btn_add_form2";
-            this.btn_add_form2.Size = new System.Drawing.Size(125, 48);
-            this.btn_add_form2.TabIndex = 55;
-            this.btn_add_form2.Text = "Add ";
             // 
             // lbl_phone_empty
             // 
@@ -187,6 +165,7 @@
             this.txt_phone.SelectedText = "";
             this.txt_phone.Size = new System.Drawing.Size(350, 47);
             this.txt_phone.TabIndex = 50;
+            this.txt_phone.TextChanged += new System.EventHandler(this.txt_phone_TextChanged);
             // 
             // lbl_phone
             // 
@@ -219,6 +198,7 @@
             this.txt_address.SelectedText = "";
             this.txt_address.Size = new System.Drawing.Size(350, 47);
             this.txt_address.TabIndex = 48;
+            this.txt_address.TextChanged += new System.EventHandler(this.txt_address_TextChanged);
             // 
             // lbl_address
             // 
@@ -251,6 +231,7 @@
             this.txt_name.SelectedText = "";
             this.txt_name.Size = new System.Drawing.Size(350, 47);
             this.txt_name.TabIndex = 46;
+            this.txt_name.TextChanged += new System.EventHandler(this.txt_name_TextChanged);
             // 
             // lbl_name
             // 
@@ -283,6 +264,7 @@
             this.txt_id.SelectedText = "";
             this.txt_id.Size = new System.Drawing.Size(350, 47);
             this.txt_id.TabIndex = 44;
+            this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
             // 
             // lbl_id
             // 
@@ -313,6 +295,7 @@
             this.btn_minimize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_minimize.TextOffset = new System.Drawing.Point(2, -4);
             this.btn_minimize.UseTransparentBackground = true;
+            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
             // 
             // btn_close
             // 
@@ -329,6 +312,29 @@
             this.btn_close.Size = new System.Drawing.Size(49, 40);
             this.btn_close.TabIndex = 41;
             this.btn_close.Text = "X";
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // btn_add_form2
+            // 
+            this.btn_add_form2.BorderColor = System.Drawing.Color.Firebrick;
+            this.btn_add_form2.BorderRadius = 6;
+            this.btn_add_form2.BorderThickness = 1;
+            this.btn_add_form2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_add_form2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_add_form2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_add_form2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_add_form2.FillColor = System.Drawing.Color.OrangeRed;
+            this.btn_add_form2.FocusedColor = System.Drawing.SystemColors.Control;
+            this.btn_add_form2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_form2.ForeColor = System.Drawing.Color.Black;
+            this.btn_add_form2.Image = global::BTL_ClockManage.Properties.Resources.update;
+            this.btn_add_form2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_add_form2.Location = new System.Drawing.Point(365, 493);
+            this.btn_add_form2.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_add_form2.Name = "btn_add_form2";
+            this.btn_add_form2.Size = new System.Drawing.Size(125, 48);
+            this.btn_add_form2.TabIndex = 55;
+            this.btn_add_form2.Text = "Update";
             // 
             // Customer_Edit
             // 
@@ -356,6 +362,7 @@
             this.Controls.Add(this.btn_close);
             this.Name = "Customer_Edit";
             this.Text = "Customer_Edit";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Customer_Edit_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

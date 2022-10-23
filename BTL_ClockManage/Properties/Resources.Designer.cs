@@ -93,6 +93,16 @@ namespace BTL_ClockManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap update {
+            get {
+                object obj = ResourceManager.GetObject("update", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Very_Basic_Reload_icon {
             get {
                 object obj = ResourceManager.GetObject("Very-Basic-Reload-icon", resourceCulture);
