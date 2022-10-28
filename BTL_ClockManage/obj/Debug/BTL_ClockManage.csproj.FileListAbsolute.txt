@@ -92,3 +92,5 @@ D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.csproj.CoreCompileI
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.csproj.CopyComplete
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.exe
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.pdb
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Form1.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewLogin.resources

@@ -1,7 +1,7 @@
 ﻿
 namespace BTL_ClockManage.Views
 {
-    partial class Form1
+    partial class viewHome
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace BTL_ClockManage.Views
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Text = "viewHome";
         }
 
         #endregion
