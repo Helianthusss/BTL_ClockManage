@@ -45,7 +45,6 @@ D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.exe
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.pdb
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Form1.resources
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewLogin.resources
-D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewHome.resources
 D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\Bunifu.Charts.WinForms.xml
 D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\Bunifu.UI.WinForms.xml
 D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
@@ -77,4 +76,5 @@ D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\System.Text.Encoding.CodePages.xml
 D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\System.Threading.AccessControl.xml
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewHomeStaff.resources
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.csproj.Fody.CopyLocal.cache
-D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.tabHomeStaff.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewHomeStocker.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewHomeManager.resources

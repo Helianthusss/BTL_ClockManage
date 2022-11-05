@@ -16,7 +16,7 @@ namespace BTL_ClockManage
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Views.viewHomeStaff());
+            Application.Run(new Views.viewHomeManager());
         }
     }
 }

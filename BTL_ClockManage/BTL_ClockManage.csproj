@@ -349,29 +349,23 @@
     <Compile Include="Models\USER.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\staff1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\staff1.Designer.cs">
-      <DependentUpon>staff1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\tabHomeStaff.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\tabHomeStaff.Designer.cs">
-      <DependentUpon>tabHomeStaff.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\viewHome.cs">
+    <Compile Include="Views\viewHomeManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\viewHome.Designer.cs">
-      <DependentUpon>viewHome.cs</DependentUpon>
+    <Compile Include="Views\viewHomeManager.Designer.cs">
+      <DependentUpon>viewHomeManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\viewHomeStaff.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\viewHomeStaff.Designer.cs">
       <DependentUpon>viewHomeStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewHomeStocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\viewHomeStocker.Designer.cs">
+      <DependentUpon>viewHomeStocker.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\viewLogin.cs">
       <SubType>Form</SubType>
@@ -392,17 +386,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\staff1.resx">
-      <DependentUpon>staff1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\tabHomeStaff.resx">
-      <DependentUpon>tabHomeStaff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\viewHome.resx">
-      <DependentUpon>viewHome.cs</DependentUpon>
+    <EmbeddedResource Include="Views\viewHomeManager.resx">
+      <DependentUpon>viewHomeManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewHomeStaff.resx">
       <DependentUpon>viewHomeStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\viewHomeStocker.resx">
+      <DependentUpon>viewHomeStocker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewLogin.resx">
       <DependentUpon>viewLogin.cs</DependentUpon>

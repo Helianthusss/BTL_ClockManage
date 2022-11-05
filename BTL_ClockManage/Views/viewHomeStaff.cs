@@ -49,13 +49,13 @@ namespace BTL_ClockManage.Views
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            tabHomeStaff1.Visible = true;
+            guna2Panel1.Visible = true;
             //tabHomeStaff1.Visible = true;
         }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-            tabHomeStaff1.Visible = false;
+            guna2Panel1.Visible = false;
            // tabHomeStaff1.Visible = false;
         }
 
