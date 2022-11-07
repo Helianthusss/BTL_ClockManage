@@ -86,3 +86,4 @@ D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\System.Text.Json.xml
 D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\System.ValueTuple.xml
 D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\zxing.xml
 D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\zxing.presentation.xml
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewAccountManage.resources
