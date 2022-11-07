@@ -32,6 +32,7 @@ namespace BTL_ClockManage.Views
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(viewLogin));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.txtcode = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnStart = new Guna.UI2.WinForms.Guna2Button();
             this.pic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.camPick = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -43,7 +44,6 @@ namespace BTL_ClockManage.Views
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.txtcode = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -68,6 +68,28 @@ namespace BTL_ClockManage.Views
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1240, 698);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
+            // txtcode
+            // 
+            this.txtcode.BorderThickness = 0;
+            this.txtcode.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtcode.DefaultText = "";
+            this.txtcode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtcode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtcode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtcode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtcode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtcode.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtcode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtcode.Location = new System.Drawing.Point(577, 542);
+            this.txtcode.Name = "txtcode";
+            this.txtcode.PasswordChar = '⁂';
+            this.txtcode.PlaceholderText = "";
+            this.txtcode.ReadOnly = true;
+            this.txtcode.SelectedText = "";
+            this.txtcode.Size = new System.Drawing.Size(200, 36);
+            this.txtcode.TabIndex = 16;
+            this.txtcode.TextChanged += new System.EventHandler(this.txtcode_TextChanged);
+            // 
             // btnStart
             // 
             this.btnStart.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
@@ -88,6 +110,7 @@ namespace BTL_ClockManage.Views
             // 
             // pic
             // 
+            this.pic.BorderRadius = 1;
             this.pic.ImageRotate = 0F;
             this.pic.Location = new System.Drawing.Point(577, 176);
             this.pic.Name = "pic";
@@ -195,27 +218,6 @@ namespace BTL_ClockManage.Views
             // 
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // txtcode
-            // 
-            this.txtcode.BorderThickness = 0;
-            this.txtcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtcode.DefaultText = "";
-            this.txtcode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtcode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtcode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtcode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtcode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtcode.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtcode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtcode.Location = new System.Drawing.Point(577, 542);
-            this.txtcode.Name = "txtcode";
-            this.txtcode.PasswordChar = '\0';
-            this.txtcode.PlaceholderText = "";
-            this.txtcode.SelectedText = "";
-            this.txtcode.Size = new System.Drawing.Size(200, 36);
-            this.txtcode.TabIndex = 16;
-            this.txtcode.TextChanged += new System.EventHandler(this.txtcode_TextChanged);
             // 
             // viewLogin
             // 
