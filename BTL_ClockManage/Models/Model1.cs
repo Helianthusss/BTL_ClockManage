@@ -8,7 +8,7 @@ namespace BTL_ClockManage.Models
     public partial class Model1 : DbContext
     {
         public Model1()
-            : base("name=Watcher_db")
+            : base("name=WatcherModel")
         {
         }
 
@@ -19,8 +19,6 @@ namespace BTL_ClockManage.Models
         public virtual DbSet<NHACUNGCAP> NHACUNGCAPs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
         public virtual DbSet<SANPHAM> SANPHAMs { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-        public virtual DbSet<USER> USERs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -97,6 +95,10 @@ namespace BTL_ClockManage.Models
                 .HasPrecision(18, 0);
 
             modelBuilder.Entity<NHANVIEN>()
+                .Property(e => e.ACCOUNT)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<NHANVIEN>()
                 .HasMany(e => e.HOADONs)
                 .WithRequired(e => e.NHANVIEN)
                 .WillCascadeOnDelete(false);
@@ -125,14 +127,6 @@ namespace BTL_ClockManage.Models
                 .HasMany(e => e.CTHDs)
                 .WithRequired(e => e.SANPHAM)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<USER>()
-                .Property(e => e.UserName)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<USER>()
-                .Property(e => e.Password)
-                .IsUnicode(false);
         }
     }
 }

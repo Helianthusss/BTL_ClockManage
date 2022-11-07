@@ -78,3 +78,11 @@ D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewHomeStaff
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.csproj.Fody.CopyLocal.cache
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewHomeStocker.resources
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewHomeManager.resources
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\AForge.xml
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\AForge.Video.xml
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\AForge.Video.DirectShow.xml
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\System.Text.Encodings.Web.xml
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\System.Text.Json.xml
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\System.ValueTuple.xml
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\zxing.xml
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\zxing.presentation.xml

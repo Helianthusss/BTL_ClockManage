@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BTL_ClockManage.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace BTL_ClockManage
 {
     static class Program
     {
+        public static Model1 context = new Model1();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +18,7 @@ namespace BTL_ClockManage
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Views.viewHomeManager());
+            Application.Run(new Views.viewLogin());
         }
     }
 }
