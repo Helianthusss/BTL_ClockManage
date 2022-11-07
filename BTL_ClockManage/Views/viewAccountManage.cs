@@ -1,4 +1,5 @@
 ﻿using BTL_ClockManage.Models;
+using QRCoder;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +31,11 @@ namespace BTL_ClockManage.Views
         public void initTable()
         {
             tbl.DataSource = null;
-            List<NHANVIEN> nv = Program.context.NHANVIENs.Where(n => n.ACCOUNT != null).OrderBy(n => n.TENNV).ToList();
+            List<NHANVIEN> nv = null;
+            if (cbPosition.SelectedIndex != -1)
+            {
+                nv = Program.context.NHANVIENs.Where(n => n.ACCOUNT != null && n.CHUCVU == cbPosition.SelectedItem.ToString()).OrderBy(n => n.TENNV).ToList();
+            }else nv = Program.context.NHANVIENs.Where(n => n.ACCOUNT != null).OrderBy(n => n.TENNV).ToList();
             DataTable table = new DataTable();
             table.Columns.Add("Id", typeof(string));
             table.Columns.Add("Tên", typeof(string));
@@ -87,6 +92,30 @@ namespace BTL_ClockManage.Views
                 new SqlParameter("@code", txtAccount.Text));
             MessageBox.Show("Sửa thành công");
             initTable();
+        }
+
+        private void saveQR_Click(object sender, EventArgs e)
+        {
+            if (picQR.Image == null)
+                return;
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog() { Filter = "*PNG|*.png" })
+            {
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    picQR.Image.Save(saveFileDialog.FileName);
+            }
+        }
+
+        private void cbPosition_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            initTable();
+        }
+
+        private void txtAccount_TextChanged(object sender, EventArgs e)
+        {
+            QRCodeGenerator qr = new QRCodeGenerator();
+            QRCodeData data = qr.CreateQrCode(txtAccount.Text, QRCodeGenerator.ECCLevel.H);
+            QRCode code = new QRCode(data);
+            picQR.Image = code.GetGraphic(5);
         }
     }
 }
