@@ -86,7 +86,7 @@ namespace BTL_ClockManage.Views
                         break;
                     case "QLCH":
                         {
-                            viewHomeManager vhm = new viewHomeManager();
+                            viewAccountManage vhm = new viewAccountManage();
                             vhm.Show();
                             Hide();
                         }
@@ -102,6 +102,11 @@ namespace BTL_ClockManage.Views
             {
                 MessageBox.Show("Không tìm thấy người dùng");
             }
+        }
+
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

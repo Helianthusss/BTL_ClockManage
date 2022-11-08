@@ -18,8 +18,8 @@ namespace BTL_ClockManage
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Views.viewLogin());
-            Application.Run(new Views.viewAccountManage());
+            Application.Run(new Views.viewLogin());
+            //Application.Run(new Views.viewAccountManage());
         }
     }
 }
