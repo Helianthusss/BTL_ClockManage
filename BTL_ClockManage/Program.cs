@@ -10,6 +10,10 @@ namespace BTL_ClockManage
     static class Program
     {
         public static Model1 context = new Model1();
+        public static void connectAgain()
+        {
+
+        }
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,8 +22,8 @@ namespace BTL_ClockManage
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Views.viewLogin());
-            //Application.Run(new Views.viewAccountManage());
+            //Application.Run(new Views.viewLogin());
+            Application.Run(new Views.viewHomeManager());
         }
     }
 }

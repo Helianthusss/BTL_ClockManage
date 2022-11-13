@@ -86,7 +86,7 @@ namespace BTL_ClockManage.Views
                         break;
                     case "QLCH":
                         {
-                            viewAccountManage vhm = new viewAccountManage();
+                            viewHomeManager vhm = new viewHomeManager();
                             vhm.Show();
                             Hide();
                         }

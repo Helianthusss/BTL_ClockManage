@@ -40,14 +40,42 @@ namespace BTL_ClockManage.Views
             }
         }
 
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        private void viewHomeManager_Load(object sender, EventArgs e)
         {
-            guna2Panel1.Visible = true;
+
+        }
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+
         }
 
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        private void btnProMana_Click(object sender, EventArgs e)
         {
-            guna2Panel1.Visible = false;
+            openChildForm(new viewEmployeeManage());
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAccMana_Click(object sender, EventArgs e)
+        {
+            openChildForm(new viewAccountManage());
         }
     }
 }

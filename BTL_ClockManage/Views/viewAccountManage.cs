@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace BTL_ClockManage.Views
         }
         public void initTable()
         {
-            tbl.DataSource = null;
+            //tbl.DataSource = null;
             List<NHANVIEN> nv = null;
             if (cbPosition.SelectedIndex != -1)
             {
@@ -58,6 +59,7 @@ namespace BTL_ClockManage.Views
             txtName.Text = tbl.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtPosition.Text = tbl.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtAccount.Text = tbl.Rows[e.RowIndex].Cells[3].Value.ToString();
+            btnAdd.Hide();
         }
 
         private void cbId_SelectedIndexChanged(object sender, EventArgs e)
@@ -66,30 +68,36 @@ namespace BTL_ClockManage.Views
             txtName.Text = nv.TENNV;
             txtPosition.Text = nv.CHUCVU;
             txtAccount.Text = nv.ACCOUNT;
+            if (txtAccount.Text == "")
+            {
+                btnAdd.Show();
+            }
+            else btnAdd.Hide();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Program.context.Database.ExecuteSqlCommand("TK_ADDACCOUNT @Manv, @code", 
-                new SqlParameter("@Manv",cbId.SelectedItem.ToString()), 
-                new SqlParameter("@code",txtAccount.Text));
+            NHANVIEN nv = Program.context.NHANVIENs.FirstOrDefault(n => n.MANV == cbId.SelectedItem.ToString());
+            nv.ACCOUNT = txtAccount.Text;
+            Program.context.SaveChanges();
             MessageBox.Show("Thêm thành công");
             initTable();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            Program.context.Database.ExecuteSqlCommand("TK_DELETEACC @Manv",
-                new SqlParameter("@Manv", cbId.SelectedItem.ToString()));
+            NHANVIEN nv = Program.context.NHANVIENs.FirstOrDefault(n => n.MANV == cbId.SelectedItem.ToString());
+            nv.ACCOUNT = null;
+            Program.context.SaveChanges();
             MessageBox.Show("Xóa thành công");
             initTable();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Program.context.Database.ExecuteSqlCommand("TK_ADDACCOUNT @Manv, @code",
-                new SqlParameter("@Manv", cbId.SelectedItem.ToString()),
-                new SqlParameter("@code", txtAccount.Text));
+            NHANVIEN nv = Program.context.NHANVIENs.FirstOrDefault(n => n.MANV == cbId.SelectedItem.ToString());
+            nv.ACCOUNT = txtAccount.Text;
+            Program.context.SaveChanges();
             MessageBox.Show("Sửa thành công");
             initTable();
         }
@@ -112,10 +120,17 @@ namespace BTL_ClockManage.Views
 
         private void txtAccount_TextChanged(object sender, EventArgs e)
         {
-            QRCodeGenerator qr = new QRCodeGenerator();
-            QRCodeData data = qr.CreateQrCode(txtAccount.Text, QRCodeGenerator.ECCLevel.H);
-            QRCode code = new QRCode(data);
-            picQR.Image = code.GetGraphic(5);
+            if(txtAccount.Text == "")
+            {
+                picQR.Image = Properties.Resources.Oggy_modified;
+            }
+            else
+            {
+                QRCodeGenerator qr = new QRCodeGenerator();
+                QRCodeData data = qr.CreateQrCode(txtAccount.Text, QRCodeGenerator.ECCLevel.H);
+                QRCode code = new QRCode(data);
+                picQR.Image = code.GetGraphic(5);
+            }
         }
     }
 }
