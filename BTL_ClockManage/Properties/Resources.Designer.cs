@@ -93,6 +93,16 @@ namespace BTL_ClockManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_cameras_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cameras-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_chevron_left_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-chevron-left-30", resourceCulture);
@@ -176,6 +186,16 @@ namespace BTL_ClockManage.Properties {
         internal static System.Drawing.Bitmap icons8_paid_bill_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-paid-bill-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_search_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-search-20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

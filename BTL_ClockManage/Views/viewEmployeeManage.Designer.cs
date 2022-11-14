@@ -61,13 +61,15 @@ namespace BTL_ClockManage.Views
             // 
             // btnDelete
             // 
+            this.btnDelete.BorderRadius = 5;
+            this.btnDelete.BorderThickness = 1;
             this.btnDelete.DefaultAutoSize = true;
             this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
             this.btnDelete.Location = new System.Drawing.Point(423, 341);
             this.btnDelete.Name = "btnDelete";
@@ -78,13 +80,16 @@ namespace BTL_ClockManage.Views
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Animated = true;
+            this.btnUpdate.BorderRadius = 5;
+            this.btnUpdate.BorderThickness = 1;
             this.btnUpdate.DefaultAutoSize = true;
             this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
             this.btnUpdate.Location = new System.Drawing.Point(231, 341);
             this.btnUpdate.Name = "btnUpdate";
@@ -95,13 +100,16 @@ namespace BTL_ClockManage.Views
             // 
             // btnAdd
             // 
+            this.btnAdd.Animated = true;
+            this.btnAdd.BorderRadius = 5;
+            this.btnAdd.BorderThickness = 1;
             this.btnAdd.DefaultAutoSize = true;
             this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.Location = new System.Drawing.Point(43, 341);
             this.btnAdd.Name = "btnAdd";
@@ -113,6 +121,7 @@ namespace BTL_ClockManage.Views
             // salary
             // 
             this.salary.BackColor = System.Drawing.Color.Transparent;
+            this.salary.BorderRadius = 5;
             this.salary.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.salary.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.salary.Location = new System.Drawing.Point(434, 233);
@@ -122,12 +131,13 @@ namespace BTL_ClockManage.Views
             0,
             0});
             this.salary.Name = "salary";
-            this.salary.Size = new System.Drawing.Size(143, 36);
+            this.salary.Size = new System.Drawing.Size(169, 36);
             this.salary.TabIndex = 36;
             // 
             // cbPosition
             // 
             this.cbPosition.BackColor = System.Drawing.Color.Transparent;
+            this.cbPosition.BorderRadius = 5;
             this.cbPosition.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPosition.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -141,11 +151,13 @@ namespace BTL_ClockManage.Views
             "Quản lý"});
             this.cbPosition.Location = new System.Drawing.Point(434, 162);
             this.cbPosition.Name = "cbPosition";
-            this.cbPosition.Size = new System.Drawing.Size(140, 36);
+            this.cbPosition.Size = new System.Drawing.Size(166, 36);
             this.cbPosition.TabIndex = 35;
             // 
             // dateTimeIn
             // 
+            this.dateTimeIn.BorderRadius = 5;
+            this.dateTimeIn.BorderThickness = 1;
             this.dateTimeIn.Checked = true;
             this.dateTimeIn.FillColor = System.Drawing.Color.White;
             this.dateTimeIn.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -154,12 +166,14 @@ namespace BTL_ClockManage.Views
             this.dateTimeIn.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimeIn.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimeIn.Name = "dateTimeIn";
-            this.dateTimeIn.Size = new System.Drawing.Size(143, 36);
+            this.dateTimeIn.Size = new System.Drawing.Size(169, 36);
             this.dateTimeIn.TabIndex = 34;
             this.dateTimeIn.Value = new System.DateTime(2022, 11, 13, 20, 51, 26, 27);
             // 
             // dateTimeBirth
             // 
+            this.dateTimeBirth.BorderRadius = 5;
+            this.dateTimeBirth.BorderThickness = 1;
             this.dateTimeBirth.Checked = true;
             this.dateTimeBirth.FillColor = System.Drawing.Color.White;
             this.dateTimeBirth.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -168,7 +182,7 @@ namespace BTL_ClockManage.Views
             this.dateTimeBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimeBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimeBirth.Name = "dateTimeBirth";
-            this.dateTimeBirth.Size = new System.Drawing.Size(143, 36);
+            this.dateTimeBirth.Size = new System.Drawing.Size(169, 36);
             this.dateTimeBirth.TabIndex = 33;
             this.dateTimeBirth.Value = new System.DateTime(2022, 11, 13, 20, 51, 26, 27);
             // 
@@ -185,6 +199,7 @@ namespace BTL_ClockManage.Views
             // 
             // txtAddress
             // 
+            this.txtAddress.BorderRadius = 5;
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddress.DefaultText = "";
             this.txtAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -200,11 +215,12 @@ namespace BTL_ClockManage.Views
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderText = "";
             this.txtAddress.SelectedText = "";
-            this.txtAddress.Size = new System.Drawing.Size(143, 107);
+            this.txtAddress.Size = new System.Drawing.Size(169, 107);
             this.txtAddress.TabIndex = 28;
             // 
             // txtName
             // 
+            this.txtName.BorderRadius = 5;
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.DefaultText = "";
             this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -219,7 +235,7 @@ namespace BTL_ClockManage.Views
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
-            this.txtName.Size = new System.Drawing.Size(143, 36);
+            this.txtName.Size = new System.Drawing.Size(169, 36);
             this.txtName.TabIndex = 29;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
@@ -280,6 +296,7 @@ namespace BTL_ClockManage.Views
             // 
             // txtPhone
             // 
+            this.txtPhone.BorderRadius = 5;
             this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.DefaultText = "";
             this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -294,7 +311,7 @@ namespace BTL_ClockManage.Views
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderText = "";
             this.txtPhone.SelectedText = "";
-            this.txtPhone.Size = new System.Drawing.Size(143, 36);
+            this.txtPhone.Size = new System.Drawing.Size(169, 36);
             this.txtPhone.TabIndex = 30;
             this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             // 
@@ -322,6 +339,7 @@ namespace BTL_ClockManage.Views
             // 
             // txtFindId
             // 
+            this.txtFindId.BorderRadius = 5;
             this.txtFindId.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFindId.DefaultText = "";
             this.txtFindId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -331,17 +349,19 @@ namespace BTL_ClockManage.Views
             this.txtFindId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFindId.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFindId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFindId.IconLeft = global::BTL_ClockManage.Properties.Resources.icons8_search_20;
             this.txtFindId.Location = new System.Drawing.Point(791, 341);
             this.txtFindId.Name = "txtFindId";
             this.txtFindId.PasswordChar = '\0';
             this.txtFindId.PlaceholderText = "";
             this.txtFindId.SelectedText = "";
-            this.txtFindId.Size = new System.Drawing.Size(143, 36);
+            this.txtFindId.Size = new System.Drawing.Size(169, 36);
             this.txtFindId.TabIndex = 31;
             this.txtFindId.TextChanged += new System.EventHandler(this.txtFindId_TextChanged);
             // 
             // txtId
             // 
+            this.txtId.BorderRadius = 5;
             this.txtId.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtId.DefaultText = "";
             this.txtId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -356,9 +376,10 @@ namespace BTL_ClockManage.Views
             this.txtId.PasswordChar = '\0';
             this.txtId.PlaceholderText = "";
             this.txtId.SelectedText = "";
-            this.txtId.Size = new System.Drawing.Size(143, 36);
+            this.txtId.Size = new System.Drawing.Size(169, 36);
             this.txtId.TabIndex = 32;
             this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
+            this.txtId.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtId_MouseClick);
             // 
             // guna2HtmlLabel3
             // 
@@ -433,6 +454,7 @@ namespace BTL_ClockManage.Views
             this.tbl.ThemeStyle.RowsStyle.Height = 24;
             this.tbl.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.tbl.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.tbl.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbl_CellContentClick);
             // 
             // viewEmployeeManage
             // 

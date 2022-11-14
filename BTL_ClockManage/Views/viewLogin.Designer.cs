@@ -32,18 +32,18 @@ namespace BTL_ClockManage.Views
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(viewLogin));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.camPick = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtcode = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnStart = new Guna.UI2.WinForms.Guna2Button();
-            this.pic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.camPick = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.pic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -67,6 +67,22 @@ namespace BTL_ClockManage.Views
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1240, 698);
             this.guna2GradientPanel1.TabIndex = 0;
+            // 
+            // camPick
+            // 
+            this.camPick.BackColor = System.Drawing.Color.Transparent;
+            this.camPick.BorderRadius = 5;
+            this.camPick.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.camPick.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.camPick.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.camPick.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.camPick.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.camPick.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.camPick.ItemHeight = 30;
+            this.camPick.Location = new System.Drawing.Point(684, 118);
+            this.camPick.Name = "camPick";
+            this.camPick.Size = new System.Drawing.Size(368, 36);
+            this.camPick.TabIndex = 13;
             // 
             // guna2HtmlLabel3
             // 
@@ -104,6 +120,9 @@ namespace BTL_ClockManage.Views
             // btnStart
             // 
             this.btnStart.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+            this.btnStart.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStart.BorderRadius = 5;
+            this.btnStart.BorderThickness = 1;
             this.btnStart.DefaultAutoSize = true;
             this.btnStart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnStart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -118,33 +137,6 @@ namespace BTL_ClockManage.Views
             this.btnStart.TabIndex = 15;
             this.btnStart.Text = "&Start";
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // pic
-            // 
-            this.pic.BorderRadius = 1;
-            this.pic.ImageRotate = 0F;
-            this.pic.Location = new System.Drawing.Point(577, 176);
-            this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(479, 360);
-            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic.TabIndex = 14;
-            this.pic.TabStop = false;
-            this.pic.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // camPick
-            // 
-            this.camPick.BackColor = System.Drawing.Color.Transparent;
-            this.camPick.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.camPick.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.camPick.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.camPick.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.camPick.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.camPick.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.camPick.ItemHeight = 30;
-            this.camPick.Location = new System.Drawing.Point(684, 118);
-            this.camPick.Name = "camPick";
-            this.camPick.Size = new System.Drawing.Size(368, 36);
-            this.camPick.TabIndex = 13;
             // 
             // guna2ControlBox3
             // 
@@ -194,6 +186,32 @@ namespace BTL_ClockManage.Views
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Login";
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // pic
+            // 
+            this.pic.BackColor = System.Drawing.Color.Transparent;
+            this.pic.BackgroundImage = global::BTL_ClockManage.Properties.Resources.icons8_cameras_48;
+            this.pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pic.BorderRadius = 6;
+            this.pic.FillColor = System.Drawing.Color.Gainsboro;
+            this.pic.ImageRotate = 0F;
+            this.pic.Location = new System.Drawing.Point(562, 176);
+            this.pic.Name = "pic";
+            this.pic.Size = new System.Drawing.Size(490, 347);
+            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic.TabIndex = 14;
+            this.pic.TabStop = false;
+            this.pic.UseTransparentBackground = true;
+            this.pic.Click += new System.EventHandler(this.btnStart_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -208,15 +226,6 @@ namespace BTL_ClockManage.Views
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // viewLogin
             // 

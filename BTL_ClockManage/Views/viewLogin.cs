@@ -51,16 +51,20 @@ namespace BTL_ClockManage.Views
                 camPick.Items.Add(device.Name);
             camPick.SelectedIndex = 0;
         }
-
-        private void viewLogin_FormClosing(object sender, FormClosingEventArgs e)
+        public void turnOffCamera()
         {
             if (videoCaptureDevice != null)
             {
                 if (videoCaptureDevice.IsRunning)
                 {
-                    videoCaptureDevice.Stop();
+                    videoCaptureDevice.SignalToStop();
+                    videoCaptureDevice = null;
                 }
             }
+        }
+        private void viewLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            turnOffCamera();
         }
 
         private void txtcode_TextChanged(object sender, EventArgs e)
@@ -75,6 +79,7 @@ namespace BTL_ClockManage.Views
                             viewHomeStaff vhs = new viewHomeStaff();
                             vhs.Show();
                             Hide();
+                            turnOffCamera();
                         }
                         break;
                     case "NVTK":
@@ -82,6 +87,7 @@ namespace BTL_ClockManage.Views
                             viewHomeStocker vhs = new viewHomeStocker();
                             vhs.Show();
                             Hide();
+                            turnOffCamera();
                         }
                         break;
                     case "QLCH":
@@ -89,6 +95,7 @@ namespace BTL_ClockManage.Views
                             viewHomeManager vhm = new viewHomeManager();
                             vhm.Show();
                             Hide();
+                            turnOffCamera();
                         }
                         break;
                     default:
@@ -102,11 +109,6 @@ namespace BTL_ClockManage.Views
             {
                 MessageBox.Show("Không tìm thấy người dùng");
             }
-        }
-
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
