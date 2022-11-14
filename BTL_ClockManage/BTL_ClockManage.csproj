@@ -380,6 +380,18 @@
     <Compile Include="Models\SANPHAM.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\CF_DealProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CF_DealProduct.Designer.cs">
+      <DependentUpon>CF_DealProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CF_ProcductManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CF_ProcductManage.Designer.cs">
+      <DependentUpon>CF_ProcductManage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\viewAccountManage.cs">
       <SubType>Form</SubType>
     </Compile>
