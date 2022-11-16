@@ -23,7 +23,7 @@ namespace BTL_ClockManage
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Views.viewLogin());
-            Application.Run(new Views.viewHomeManager());
+            Application.Run(new Views.viewHomeStocker());
         }
     }
 }

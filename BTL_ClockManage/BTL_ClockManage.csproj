@@ -392,6 +392,12 @@
     <Compile Include="Views\CF_ProcductManage.Designer.cs">
       <DependentUpon>CF_ProcductManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Update_New_Price.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Update_New_Price.Designer.cs">
+      <DependentUpon>Update_New_Price.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\viewAccountManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -447,6 +453,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\CF_DealProduct.resx">
+      <DependentUpon>CF_DealProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CF_ProcductManage.resx">
+      <DependentUpon>CF_ProcductManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Update_New_Price.resx">
+      <DependentUpon>Update_New_Price.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\viewAccountManage.resx">
       <DependentUpon>viewAccountManage.cs</DependentUpon>
     </EmbeddedResource>
@@ -541,6 +556,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-cameras-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sphere-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-trash-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-30 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-upload-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-241.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

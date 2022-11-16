@@ -30,24 +30,35 @@ namespace BTL_ClockManage.Views
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation5 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(viewHomeStocker));
             this.panelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.DetectMouse = new System.Windows.Forms.Timer(this.components);
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Panel_Control_Big = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel_Control_CProduct = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel_Content = new Guna.UI2.WinForms.Guna2Panel();
+            this.Timer_Product = new System.Windows.Forms.Timer(this.components);
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2GradientButton_Report = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton_DealProduct = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton_ProductManage = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton_Product = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientButton_Home = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
-            this.DetectMouse = new System.Windows.Forms.Timer(this.components);
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            this.guna2Panel_Control_Big.SuspendLayout();
+            this.guna2Panel_Control_CProduct.SuspendLayout();
+            this.guna2Panel_Content.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -60,9 +71,325 @@ namespace BTL_ClockManage.Views
             this.panelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(185)))), ((int)(((byte)(227)))));
             this.panelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(63, 553);
+            this.panelMenu.Size = new System.Drawing.Size(84, 681);
             this.panelMenu.TabIndex = 1;
+            // 
+            // guna2Transition1
+            // 
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Transition1.SetDecoration(this.guna2ControlBox2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1261, 0);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(60, 36);
+            this.guna2ControlBox2.TabIndex = 12;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2Panel1.Controls.Add(this.guna2Panel_Control_Big);
+            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2Transition1.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel1.Location = new System.Drawing.Point(84, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(267, 681);
+            this.guna2Panel1.TabIndex = 13;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(8, 32);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(103, 22);
+            this.guna2HtmlLabel2.TabIndex = 3;
+            this.guna2HtmlLabel2.Text = "WATCH STORE";
+            // 
+            // DetectMouse
+            // 
+            this.DetectMouse.Enabled = true;
+            this.DetectMouse.Tick += new System.EventHandler(this.DetectMouse_Tick);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 12;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Panel_Control_Big
+            // 
+            this.guna2Panel_Control_Big.Controls.Add(this.guna2GradientButton_Report);
+            this.guna2Panel_Control_Big.Controls.Add(this.guna2Panel_Control_CProduct);
+            this.guna2Panel_Control_Big.Controls.Add(this.guna2GradientButton_Product);
+            this.guna2Panel_Control_Big.Controls.Add(this.guna2GradientButton_Home);
+            this.guna2Transition1.SetDecoration(this.guna2Panel_Control_Big, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel_Control_Big.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2Panel_Control_Big.Location = new System.Drawing.Point(0, 213);
+            this.guna2Panel_Control_Big.Name = "guna2Panel_Control_Big";
+            this.guna2Panel_Control_Big.Size = new System.Drawing.Size(267, 405);
+            this.guna2Panel_Control_Big.TabIndex = 14;
+            // 
+            // guna2Panel_Control_CProduct
+            // 
+            this.guna2Panel_Control_CProduct.Controls.Add(this.guna2GradientButton_DealProduct);
+            this.guna2Panel_Control_CProduct.Controls.Add(this.guna2GradientButton_ProductManage);
+            this.guna2Transition1.SetDecoration(this.guna2Panel_Control_CProduct, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel_Control_CProduct.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel_Control_CProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2Panel_Control_CProduct.Location = new System.Drawing.Point(0, 110);
+            this.guna2Panel_Control_CProduct.MaximumSize = new System.Drawing.Size(267, 110);
+            this.guna2Panel_Control_CProduct.MinimumSize = new System.Drawing.Size(267, 0);
+            this.guna2Panel_Control_CProduct.Name = "guna2Panel_Control_CProduct";
+            this.guna2Panel_Control_CProduct.Size = new System.Drawing.Size(267, 0);
+            this.guna2Panel_Control_CProduct.TabIndex = 15;
+            // 
+            // guna2Panel_Content
+            // 
+            this.guna2Panel_Content.Controls.Add(this.guna2ControlBox1);
+            this.guna2Panel_Content.Controls.Add(this.guna2ControlBox3);
+            this.guna2Transition1.SetDecoration(this.guna2Panel_Content, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel_Content.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel_Content.Location = new System.Drawing.Point(351, 0);
+            this.guna2Panel_Content.Name = "guna2Panel_Content";
+            this.guna2Panel_Content.Size = new System.Drawing.Size(972, 681);
+            this.guna2Panel_Content.TabIndex = 14;
+            // 
+            // Timer_Product
+            // 
+            this.Timer_Product.Interval = 10;
+            this.Timer_Product.Tick += new System.EventHandler(this.Timer_Product_Tick);
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Transition1.SetDecoration(this.guna2ControlBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2ControlBox1.FillColor = System.Drawing.SystemColors.Control;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(911, 0);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(60, 36);
+            this.guna2ControlBox1.TabIndex = 16;
+            // 
+            // guna2ControlBox3
+            // 
+            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2Transition1.SetDecoration(this.guna2ControlBox3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2ControlBox3.FillColor = System.Drawing.SystemColors.Control;
+            this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox3.Location = new System.Drawing.Point(853, 0);
+            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox3.Name = "guna2ControlBox3";
+            this.guna2ControlBox3.Size = new System.Drawing.Size(60, 36);
+            this.guna2ControlBox3.TabIndex = 17;
+            // 
+            // guna2GradientButton_Report
+            // 
+            this.guna2GradientButton_Report.Animated = true;
+            this.guna2GradientButton_Report.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton_Report.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
+            this.guna2GradientButton_Report.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton_Report.CheckedState.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2Transition1.SetDecoration(this.guna2GradientButton_Report, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientButton_Report.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton_Report.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton_Report.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton_Report.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton_Report.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton_Report.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientButton_Report.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton_Report.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton_Report.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton_Report.ForeColor = System.Drawing.Color.Black;
+            this.guna2GradientButton_Report.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton_Report.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton_Report.Image = global::BTL_ClockManage.Properties.Resources.icons8_statistics_30;
+            this.guna2GradientButton_Report.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton_Report.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2GradientButton_Report.Location = new System.Drawing.Point(0, 110);
+            this.guna2GradientButton_Report.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2GradientButton_Report.Name = "guna2GradientButton_Report";
+            this.guna2GradientButton_Report.PressedColor = System.Drawing.Color.White;
+            this.guna2GradientButton_Report.Size = new System.Drawing.Size(267, 55);
+            this.guna2GradientButton_Report.TabIndex = 7;
+            this.guna2GradientButton_Report.Text = "Report";
+            this.guna2GradientButton_Report.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton_Report.TextOffset = new System.Drawing.Point(20, 0);
+            this.guna2GradientButton_Report.UseTransparentBackground = true;
+            this.guna2GradientButton_Report.Click += new System.EventHandler(this.guna2GradientButton_Report_Click);
+            // 
+            // guna2GradientButton_DealProduct
+            // 
+            this.guna2GradientButton_DealProduct.Animated = true;
+            this.guna2GradientButton_DealProduct.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton_DealProduct.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
+            this.guna2GradientButton_DealProduct.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton_DealProduct.CheckedState.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2Transition1.SetDecoration(this.guna2GradientButton_DealProduct, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientButton_DealProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton_DealProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton_DealProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton_DealProduct.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton_DealProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton_DealProduct.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientButton_DealProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton_DealProduct.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton_DealProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton_DealProduct.ForeColor = System.Drawing.Color.Black;
+            this.guna2GradientButton_DealProduct.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton_DealProduct.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton_DealProduct.Image = global::BTL_ClockManage.Properties.Resources.icons8_sphere_30;
+            this.guna2GradientButton_DealProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton_DealProduct.ImageOffset = new System.Drawing.Point(30, 0);
+            this.guna2GradientButton_DealProduct.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2GradientButton_DealProduct.Location = new System.Drawing.Point(0, 55);
+            this.guna2GradientButton_DealProduct.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2GradientButton_DealProduct.Name = "guna2GradientButton_DealProduct";
+            this.guna2GradientButton_DealProduct.PressedColor = System.Drawing.Color.White;
+            this.guna2GradientButton_DealProduct.Size = new System.Drawing.Size(267, 55);
+            this.guna2GradientButton_DealProduct.TabIndex = 17;
+            this.guna2GradientButton_DealProduct.Text = "Deal product";
+            this.guna2GradientButton_DealProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton_DealProduct.TextOffset = new System.Drawing.Point(40, 0);
+            this.guna2GradientButton_DealProduct.UseTransparentBackground = true;
+            this.guna2GradientButton_DealProduct.Click += new System.EventHandler(this.guna2GradientButton_DealProduct_Click);
+            // 
+            // guna2GradientButton_ProductManage
+            // 
+            this.guna2GradientButton_ProductManage.Animated = true;
+            this.guna2GradientButton_ProductManage.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton_ProductManage.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
+            this.guna2GradientButton_ProductManage.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton_ProductManage.CheckedState.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2Transition1.SetDecoration(this.guna2GradientButton_ProductManage, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientButton_ProductManage.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton_ProductManage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton_ProductManage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton_ProductManage.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton_ProductManage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton_ProductManage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientButton_ProductManage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton_ProductManage.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton_ProductManage.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton_ProductManage.ForeColor = System.Drawing.Color.Black;
+            this.guna2GradientButton_ProductManage.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton_ProductManage.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton_ProductManage.Image = global::BTL_ClockManage.Properties.Resources.icons8_sphere_30;
+            this.guna2GradientButton_ProductManage.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton_ProductManage.ImageOffset = new System.Drawing.Point(30, 0);
+            this.guna2GradientButton_ProductManage.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2GradientButton_ProductManage.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientButton_ProductManage.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2GradientButton_ProductManage.Name = "guna2GradientButton_ProductManage";
+            this.guna2GradientButton_ProductManage.PressedColor = System.Drawing.Color.White;
+            this.guna2GradientButton_ProductManage.Size = new System.Drawing.Size(267, 55);
+            this.guna2GradientButton_ProductManage.TabIndex = 16;
+            this.guna2GradientButton_ProductManage.Text = "Product manager";
+            this.guna2GradientButton_ProductManage.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton_ProductManage.TextOffset = new System.Drawing.Point(40, 0);
+            this.guna2GradientButton_ProductManage.UseTransparentBackground = true;
+            this.guna2GradientButton_ProductManage.Click += new System.EventHandler(this.guna2GradientButton_ProductManage_Click);
+            // 
+            // guna2GradientButton_Product
+            // 
+            this.guna2GradientButton_Product.Animated = true;
+            this.guna2GradientButton_Product.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton_Product.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
+            this.guna2GradientButton_Product.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton_Product.CheckedState.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2Transition1.SetDecoration(this.guna2GradientButton_Product, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientButton_Product.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton_Product.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton_Product.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton_Product.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton_Product.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton_Product.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientButton_Product.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton_Product.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton_Product.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton_Product.ForeColor = System.Drawing.Color.Black;
+            this.guna2GradientButton_Product.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton_Product.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton_Product.Image = global::BTL_ClockManage.Properties.Resources.icons8_paid_bill_30;
+            this.guna2GradientButton_Product.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton_Product.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2GradientButton_Product.Location = new System.Drawing.Point(0, 55);
+            this.guna2GradientButton_Product.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2GradientButton_Product.Name = "guna2GradientButton_Product";
+            this.guna2GradientButton_Product.PressedColor = System.Drawing.Color.White;
+            this.guna2GradientButton_Product.Size = new System.Drawing.Size(267, 55);
+            this.guna2GradientButton_Product.TabIndex = 6;
+            this.guna2GradientButton_Product.Text = "Product";
+            this.guna2GradientButton_Product.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton_Product.TextOffset = new System.Drawing.Point(20, 0);
+            this.guna2GradientButton_Product.UseTransparentBackground = true;
+            this.guna2GradientButton_Product.Click += new System.EventHandler(this.guna2GradientButton_Product_Click);
+            // 
+            // guna2GradientButton_Home
+            // 
+            this.guna2GradientButton_Home.Animated = true;
+            this.guna2GradientButton_Home.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton_Home.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
+            this.guna2GradientButton_Home.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton_Home.CheckedState.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2Transition1.SetDecoration(this.guna2GradientButton_Home, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientButton_Home.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton_Home.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton_Home.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton_Home.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton_Home.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton_Home.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientButton_Home.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton_Home.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2GradientButton_Home.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton_Home.ForeColor = System.Drawing.Color.Black;
+            this.guna2GradientButton_Home.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton_Home.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton_Home.Image = global::BTL_ClockManage.Properties.Resources.icons8_home_page_30;
+            this.guna2GradientButton_Home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton_Home.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2GradientButton_Home.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientButton_Home.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2GradientButton_Home.Name = "guna2GradientButton_Home";
+            this.guna2GradientButton_Home.PressedColor = System.Drawing.Color.White;
+            this.guna2GradientButton_Home.Size = new System.Drawing.Size(267, 55);
+            this.guna2GradientButton_Home.TabIndex = 5;
+            this.guna2GradientButton_Home.Text = "Home";
+            this.guna2GradientButton_Home.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2GradientButton_Home.TextOffset = new System.Drawing.Point(20, 0);
+            this.guna2GradientButton_Home.UseTransparentBackground = true;
+            this.guna2GradientButton_Home.Click += new System.EventHandler(this.guna2GradientButton_Home_Click);
             // 
             // guna2GradientButton2
             // 
@@ -86,10 +413,11 @@ namespace BTL_ClockManage.Views
             this.guna2GradientButton2.Image = global::BTL_ClockManage.Properties.Resources.icons8_sign_out_30;
             this.guna2GradientButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton2.Location = new System.Drawing.Point(0, 227);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(0, 279);
+            this.guna2GradientButton2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.PressedColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(205, 45);
+            this.guna2GradientButton2.Size = new System.Drawing.Size(273, 55);
             this.guna2GradientButton2.TabIndex = 2;
             this.guna2GradientButton2.Text = "Log out";
             this.guna2GradientButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -119,10 +447,11 @@ namespace BTL_ClockManage.Views
             this.guna2GradientButton1.Image = global::BTL_ClockManage.Properties.Resources.icons8_account_50__1_;
             this.guna2GradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton1.Location = new System.Drawing.Point(0, 173);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(0, 213);
+            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.PressedColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(205, 45);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(273, 55);
             this.guna2GradientButton1.TabIndex = 1;
             this.guna2GradientButton1.Text = "Stocker";
             this.guna2GradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -139,195 +468,37 @@ namespace BTL_ClockManage.Views
             this.guna2PictureBox1.Image = global::BTL_ClockManage.Properties.Resources.icons8_watches_front_view_50;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(63, 69);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(84, 85);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
-            // guna2Transition1
-            // 
-            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
-            this.guna2Transition1.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation5;
-            // 
-            // DetectMouse
-            // 
-            this.DetectMouse.Enabled = true;
-            this.DetectMouse.Tick += new System.EventHandler(this.DetectMouse_Tick);
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Transition1.SetDecoration(this.guna2ControlBox2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Red;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(946, 0);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox2.TabIndex = 12;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 12;
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
-            this.guna2Panel1.Controls.Add(this.guna2GradientButton5);
-            this.guna2Panel1.Controls.Add(this.guna2GradientButton4);
-            this.guna2Panel1.Controls.Add(this.guna2GradientButton3);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2Transition1.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel1.Location = new System.Drawing.Point(63, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(200, 553);
-            this.guna2Panel1.TabIndex = 13;
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(6, 26);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(85, 17);
-            this.guna2HtmlLabel2.TabIndex = 3;
-            this.guna2HtmlLabel2.Text = "WATCH STORE";
-            // 
-            // guna2GradientButton3
-            // 
-            this.guna2GradientButton3.Animated = true;
-            this.guna2GradientButton3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
-            this.guna2GradientButton3.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton3.CheckedState.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Transition1.SetDecoration(this.guna2GradientButton3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton3.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton3.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.Image = global::BTL_ClockManage.Properties.Resources.icons8_home_page_30;
-            this.guna2GradientButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton3.Location = new System.Drawing.Point(0, 176);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.PressedColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.Size = new System.Drawing.Size(205, 45);
-            this.guna2GradientButton3.TabIndex = 5;
-            this.guna2GradientButton3.Text = "Home";
-            this.guna2GradientButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton3.TextOffset = new System.Drawing.Point(20, 0);
-            this.guna2GradientButton3.UseTransparentBackground = true;
-            // 
-            // guna2GradientButton4
-            // 
-            this.guna2GradientButton4.Animated = true;
-            this.guna2GradientButton4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
-            this.guna2GradientButton4.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton4.CheckedState.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Transition1.SetDecoration(this.guna2GradientButton4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
-            this.guna2GradientButton4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
-            this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton4.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton4.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton4.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.Image = global::BTL_ClockManage.Properties.Resources.icons8_paid_bill_30;
-            this.guna2GradientButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton4.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton4.Location = new System.Drawing.Point(0, 224);
-            this.guna2GradientButton4.Name = "guna2GradientButton4";
-            this.guna2GradientButton4.PressedColor = System.Drawing.Color.White;
-            this.guna2GradientButton4.Size = new System.Drawing.Size(205, 45);
-            this.guna2GradientButton4.TabIndex = 6;
-            this.guna2GradientButton4.Text = "Product manager";
-            this.guna2GradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton4.TextOffset = new System.Drawing.Point(20, 0);
-            this.guna2GradientButton4.UseTransparentBackground = true;
-            // 
-            // guna2GradientButton5
-            // 
-            this.guna2GradientButton5.Animated = true;
-            this.guna2GradientButton5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
-            this.guna2GradientButton5.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton5.CheckedState.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Transition1.SetDecoration(this.guna2GradientButton5, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientButton5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton5.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
-            this.guna2GradientButton5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
-            this.guna2GradientButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton5.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton5.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton5.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton5.Image = global::BTL_ClockManage.Properties.Resources.icons8_statistics_30;
-            this.guna2GradientButton5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton5.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2GradientButton5.Location = new System.Drawing.Point(0, 275);
-            this.guna2GradientButton5.Name = "guna2GradientButton5";
-            this.guna2GradientButton5.PressedColor = System.Drawing.Color.White;
-            this.guna2GradientButton5.Size = new System.Drawing.Size(205, 45);
-            this.guna2GradientButton5.TabIndex = 7;
-            this.guna2GradientButton5.Text = "Report";
-            this.guna2GradientButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2GradientButton5.TextOffset = new System.Drawing.Point(20, 0);
-            this.guna2GradientButton5.UseTransparentBackground = true;
-            // 
             // viewHomeStocker
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 553);
+            this.ClientSize = new System.Drawing.Size(1323, 681);
+            this.Controls.Add(this.guna2Panel_Content);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.panelMenu);
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "viewHomeStocker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "viewHomeStocker";
             this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            this.guna2Panel_Control_Big.ResumeLayout(false);
+            this.guna2Panel_Control_CProduct.ResumeLayout(false);
+            this.guna2Panel_Content.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -344,8 +515,16 @@ namespace BTL_ClockManage.Views
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton_Home;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton_Product;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton_Report;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton_DealProduct;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton_ProductManage;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel_Control_CProduct;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel_Control_Big;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel_Content;
+        private System.Windows.Forms.Timer Timer_Product;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
     }
 }
