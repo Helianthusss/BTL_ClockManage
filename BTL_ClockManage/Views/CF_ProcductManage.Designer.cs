@@ -30,13 +30,15 @@ namespace BTL_ClockManage.Views
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CF_ProcductManage));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CF_ProcductManage));
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lbAddProduct = new System.Windows.Forms.Label();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.lb_Title = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Panel_View = new Guna.UI2.WinForms.Guna2Panel();
@@ -53,7 +55,10 @@ namespace BTL_ClockManage.Views
             this.lbType = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox_Product = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel_ListProduct = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnSort_Dec = new Guna.UI2.WinForms.Guna2Button();
             this.btnSort_Asc = new Guna.UI2.WinForms.Guna2Button();
             this.btnSort_All = new Guna.UI2.WinForms.Guna2Button();
@@ -62,18 +67,13 @@ namespace BTL_ClockManage.Views
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox_Product = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel_View.SuspendLayout();
             this.guna2Panel_ShowProduct.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox_Product)).BeginInit();
             this.guna2Panel_ListProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_Product)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox_Product)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel2
@@ -89,16 +89,51 @@ namespace BTL_ClockManage.Views
             this.guna2Panel2.Size = new System.Drawing.Size(972, 81);
             this.guna2Panel2.TabIndex = 1;
             // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::BTL_ClockManage.Properties.Resources.icons8_add_30__1_;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(768, 34);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 4;
+            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            // 
             // lbAddProduct
             // 
             this.lbAddProduct.AutoSize = true;
             this.lbAddProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAddProduct.Location = new System.Drawing.Point(779, 31);
+            this.lbAddProduct.Location = new System.Drawing.Point(799, 31);
             this.lbAddProduct.Name = "lbAddProduct";
             this.lbAddProduct.Padding = new System.Windows.Forms.Padding(0, 5, 50, 5);
             this.lbAddProduct.Size = new System.Drawing.Size(193, 33);
             this.lbAddProduct.TabIndex = 3;
             this.lbAddProduct.Text = "Add new product";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.AutoRoundedCorners = true;
+            this.txtSearch.BorderRadius = 17;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.DefaultText = "";
+            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearch.HoverState.BorderColor = System.Drawing.SystemColors.Control;
+            this.txtSearch.IconRight = global::BTL_ClockManage.Properties.Resources.icons8_search_40;
+            this.txtSearch.Location = new System.Drawing.Point(218, 31);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PlaceholderText = "Search by name";
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.Size = new System.Drawing.Size(256, 36);
+            this.txtSearch.TabIndex = 2;
             // 
             // lb_Title
             // 
@@ -361,6 +396,17 @@ namespace BTL_ClockManage.Views
             this.lbName.TabIndex = 4;
             this.lbName.Text = "Name";
             // 
+            // guna2PictureBox_Product
+            // 
+            this.guna2PictureBox_Product.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox_Product.Image")));
+            this.guna2PictureBox_Product.ImageRotate = 0F;
+            this.guna2PictureBox_Product.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox_Product.Name = "guna2PictureBox_Product";
+            this.guna2PictureBox_Product.Size = new System.Drawing.Size(145, 150);
+            this.guna2PictureBox_Product.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox_Product.TabIndex = 0;
+            this.guna2PictureBox_Product.TabStop = false;
+            // 
             // guna2Panel_ListProduct
             // 
             this.guna2Panel_ListProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -374,6 +420,53 @@ namespace BTL_ClockManage.Views
             this.guna2Panel_ListProduct.Name = "guna2Panel_ListProduct";
             this.guna2Panel_ListProduct.Size = new System.Drawing.Size(513, 598);
             this.guna2Panel_ListProduct.TabIndex = 3;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Animated = true;
+            this.btnEdit.AnimatedGIF = true;
+            this.btnEdit.AutoRoundedCorners = true;
+            this.btnEdit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.btnEdit.BorderRadius = 18;
+            this.btnEdit.BorderThickness = 2;
+            this.btnEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEdit.FillColor = System.Drawing.SystemColors.Control;
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.Black;
+            this.btnEdit.Image = global::BTL_ClockManage.Properties.Resources.icons8_edit_30__2_;
+            this.btnEdit.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnEdit.Location = new System.Drawing.Point(391, 539);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(110, 38);
+            this.btnEdit.TabIndex = 5;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Animated = true;
+            this.btnDelete.AnimatedGIF = true;
+            this.btnDelete.AutoRoundedCorners = true;
+            this.btnDelete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.btnDelete.BorderRadius = 18;
+            this.btnDelete.BorderThickness = 2;
+            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete.FillColor = System.Drawing.SystemColors.Control;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.Black;
+            this.btnDelete.Image = global::BTL_ClockManage.Properties.Resources.icons8_trash_30;
+            this.btnDelete.ImageSize = new System.Drawing.Size(15, 15);
+            this.btnDelete.Location = new System.Drawing.Point(275, 539);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(110, 38);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "Delete";
             // 
             // btnSort_Dec
             // 
@@ -528,97 +621,6 @@ namespace BTL_ClockManage.Views
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this.DataGridView_Product;
             // 
-            // btnEdit
-            // 
-            this.btnEdit.Animated = true;
-            this.btnEdit.AnimatedGIF = true;
-            this.btnEdit.AutoRoundedCorners = true;
-            this.btnEdit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
-            this.btnEdit.BorderRadius = 18;
-            this.btnEdit.BorderThickness = 2;
-            this.btnEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEdit.FillColor = System.Drawing.SystemColors.Control;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnEdit.Image = global::BTL_ClockManage.Properties.Resources.icons8_edit_30__2_;
-            this.btnEdit.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnEdit.Location = new System.Drawing.Point(391, 539);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(110, 38);
-            this.btnEdit.TabIndex = 5;
-            this.btnEdit.Text = "Edit";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Animated = true;
-            this.btnDelete.AnimatedGIF = true;
-            this.btnDelete.AutoRoundedCorners = true;
-            this.btnDelete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
-            this.btnDelete.BorderRadius = 18;
-            this.btnDelete.BorderThickness = 2;
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.FillColor = System.Drawing.SystemColors.Control;
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Image = global::BTL_ClockManage.Properties.Resources.icons8_trash_30;
-            this.btnDelete.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnDelete.Location = new System.Drawing.Point(275, 539);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(110, 38);
-            this.btnDelete.TabIndex = 4;
-            this.btnDelete.Text = "Delete";
-            // 
-            // guna2PictureBox_Product
-            // 
-            this.guna2PictureBox_Product.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox_Product.Image")));
-            this.guna2PictureBox_Product.ImageRotate = 0F;
-            this.guna2PictureBox_Product.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox_Product.Name = "guna2PictureBox_Product";
-            this.guna2PictureBox_Product.Size = new System.Drawing.Size(145, 150);
-            this.guna2PictureBox_Product.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox_Product.TabIndex = 0;
-            this.guna2PictureBox_Product.TabStop = false;
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = global::BTL_ClockManage.Properties.Resources.icons8_add_30__1_;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(748, 34);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 4;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.AutoRoundedCorners = true;
-            this.txtSearch.BorderRadius = 17;
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.DefaultText = "";
-            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearch.HoverState.BorderColor = System.Drawing.SystemColors.Control;
-            this.txtSearch.IconRight = global::BTL_ClockManage.Properties.Resources.icons8_search_40;
-            this.txtSearch.Location = new System.Drawing.Point(218, 31);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "Search by name";
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(256, 36);
-            this.txtSearch.TabIndex = 2;
-            // 
             // CF_ProcductManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -632,13 +634,13 @@ namespace BTL_ClockManage.Views
             this.Text = "CF_ProcductManage";
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel_View.ResumeLayout(false);
             this.guna2Panel_ShowProduct.ResumeLayout(false);
             this.guna2Panel_ShowProduct.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox_Product)).EndInit();
             this.guna2Panel_ListProduct.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_Product)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox_Product)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

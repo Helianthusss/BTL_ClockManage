@@ -19,22 +19,28 @@ namespace BTL_ClockManage.Views
 
         private void btnInventory_Click(object sender, EventArgs e)
         {
+            txtSearch.Visible = true;
+            txtNewprice.Visible = false;
             DataGridView_Product_Inventory.Visible = true;
             DataGridView_Product_Deal.Visible = false;
-            btnNewprice.Visible = true;
         }
 
         private void btnListdeal_Click(object sender, EventArgs e)
         {
+            txtSearch.Visible = false;
+            txtNewprice.Visible = true;
             DataGridView_Product_Inventory.Visible = false;
             DataGridView_Product_Deal.Visible = true;
-            btnNewprice.Visible = false;
         }
 
         private void btnNewprice_Click(object sender, EventArgs e)
         {
-            Form fm = new Update_New_Price();
-            fm.Show();
+            
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

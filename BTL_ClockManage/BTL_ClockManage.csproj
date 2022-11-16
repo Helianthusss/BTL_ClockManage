@@ -392,11 +392,17 @@
     <Compile Include="Views\CF_ProcductManage.Designer.cs">
       <DependentUpon>CF_ProcductManage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Update_New_Price.cs">
+    <Compile Include="Views\Edit_Product.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Update_New_Price.Designer.cs">
-      <DependentUpon>Update_New_Price.cs</DependentUpon>
+    <Compile Include="Views\Edit_Product.Designer.cs">
+      <DependentUpon>Edit_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\New_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\New_Product.Designer.cs">
+      <DependentUpon>New_Product.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\viewAccountManage.cs">
       <SubType>Form</SubType>
@@ -459,8 +465,11 @@
     <EmbeddedResource Include="Views\CF_ProcductManage.resx">
       <DependentUpon>CF_ProcductManage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Update_New_Price.resx">
-      <DependentUpon>Update_New_Price.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Edit_Product.resx">
+      <DependentUpon>Edit_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\New_Product.resx">
+      <DependentUpon>New_Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewAccountManage.resx">
       <DependentUpon>viewAccountManage.cs</DependentUpon>

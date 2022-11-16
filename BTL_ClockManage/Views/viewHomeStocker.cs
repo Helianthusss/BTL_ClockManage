@@ -100,26 +100,34 @@ namespace BTL_ClockManage.Views
             guna2Panel1.Visible = false;
         }
 
+        private void Open_Menu_ChildProduct()
+        {
+            guna2Panel_Control_CProduct.Height += 110;
+            if (guna2Panel_Control_CProduct.Height == guna2Panel_Control_CProduct.MaximumSize.Height)
+            {
+                Product_Menu_Child = false;
+                Timer_Product.Stop();
+            }
+        }
+        private void Close_Menu_ChildProduct()
+        {
+            guna2Panel_Control_CProduct.Height -= 110;
+            if (guna2Panel_Control_CProduct.Height == guna2Panel_Control_CProduct.MinimumSize.Height)
+            {
+                Product_Menu_Child = true;
+                Timer_Product.Stop();
+            }
+        }
         private void Timer_Product_Tick(object sender, EventArgs e)
         {
             if (Product_Menu_Child)
             {
-                guna2Panel_Control_CProduct.Height += 110;
-                if (guna2Panel_Control_CProduct.Height == guna2Panel_Control_CProduct.MaximumSize.Height)
-                {
-                    Product_Menu_Child = false;
-                    Timer_Product.Stop();
-                }
+                Open_Menu_ChildProduct();
 
             }
             else
             {
-                guna2Panel_Control_CProduct.Height -= 110;
-                if (guna2Panel_Control_CProduct.Height == guna2Panel_Control_CProduct.MinimumSize.Height)
-                {
-                    Product_Menu_Child = true;
-                    Timer_Product.Stop();
-                }
+                Close_Menu_ChildProduct();
             }
         }
 
@@ -131,11 +139,13 @@ namespace BTL_ClockManage.Views
 
         private void guna2GradientButton_Home_Click(object sender, EventArgs e)
         {
+            Close_Menu_ChildProduct();
             buttonHoatDong(sender, guna2Panel_Control_Big);
         }
 
         private void guna2GradientButton_Report_Click(object sender, EventArgs e)
         {
+            Close_Menu_ChildProduct();
             buttonHoatDong(sender, guna2Panel_Control_Big);
         }
 

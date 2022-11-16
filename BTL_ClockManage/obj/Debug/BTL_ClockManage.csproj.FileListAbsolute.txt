@@ -182,4 +182,5 @@ D:\Quynh\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.exe
 D:\Quynh\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.pdb
 D:\Quynh\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.CF_DealProduct.resources
 D:\Quynh\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.CF_ProcductManage.resources
-D:\Quynh\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.Update_New_Price.resources
+D:\Quynh\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.Edit_Product.resources
+D:\Quynh\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.New_Product.resources

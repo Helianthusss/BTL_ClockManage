@@ -44,7 +44,6 @@ namespace BTL_ClockManage.Views
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnNewprice = new Guna.UI2.WinForms.Guna2Button();
             this.btnListdeal = new Guna.UI2.WinForms.Guna2Button();
             this.btnInventory = new Guna.UI2.WinForms.Guna2Button();
             this.DataGridView_Product_Inventory = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -72,6 +71,7 @@ namespace BTL_ClockManage.Views
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.txtNewprice = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel_ListProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_Product_Deal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_Product_Inventory)).BeginInit();
@@ -85,7 +85,6 @@ namespace BTL_ClockManage.Views
             // 
             this.guna2Panel_ListProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel_ListProduct.Controls.Add(this.DataGridView_Product_Deal);
-            this.guna2Panel_ListProduct.Controls.Add(this.btnNewprice);
             this.guna2Panel_ListProduct.Controls.Add(this.btnListdeal);
             this.guna2Panel_ListProduct.Controls.Add(this.btnInventory);
             this.guna2Panel_ListProduct.Controls.Add(this.DataGridView_Product_Inventory);
@@ -172,30 +171,6 @@ namespace BTL_ClockManage.Views
             this.dataGridViewTextBoxColumn3.HeaderText = "Quanity";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // btnNewprice
-            // 
-            this.btnNewprice.Animated = true;
-            this.btnNewprice.AnimatedGIF = true;
-            this.btnNewprice.AutoRoundedCorners = true;
-            this.btnNewprice.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
-            this.btnNewprice.BorderRadius = 18;
-            this.btnNewprice.BorderThickness = 2;
-            this.btnNewprice.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNewprice.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNewprice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNewprice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNewprice.FillColor = System.Drawing.SystemColors.Control;
-            this.btnNewprice.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewprice.ForeColor = System.Drawing.Color.Black;
-            this.btnNewprice.Image = global::BTL_ClockManage.Properties.Resources.icons8_update_30;
-            this.btnNewprice.ImageSize = new System.Drawing.Size(15, 15);
-            this.btnNewprice.Location = new System.Drawing.Point(363, 539);
-            this.btnNewprice.Name = "btnNewprice";
-            this.btnNewprice.Size = new System.Drawing.Size(123, 38);
-            this.btnNewprice.TabIndex = 6;
-            this.btnNewprice.Text = "New price";
-            this.btnNewprice.Click += new System.EventHandler(this.btnNewprice_Click);
             // 
             // btnListdeal
             // 
@@ -284,7 +259,7 @@ namespace BTL_ClockManage.Views
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.DataGridView_Product_Inventory.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.DataGridView_Product_Inventory.RowTemplate.Height = 24;
-            this.DataGridView_Product_Inventory.Size = new System.Drawing.Size(483, 441);
+            this.DataGridView_Product_Inventory.Size = new System.Drawing.Size(483, 514);
             this.DataGridView_Product_Inventory.TabIndex = 0;
             this.DataGridView_Product_Inventory.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridView_Product_Inventory.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -602,6 +577,7 @@ namespace BTL_ClockManage.Views
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.txtNewprice);
             this.guna2Panel2.Controls.Add(this.txtSearch);
             this.guna2Panel2.Controls.Add(this.lb_Title);
             this.guna2Panel2.Controls.Add(this.guna2Separator1);
@@ -637,6 +613,29 @@ namespace BTL_ClockManage.Views
             // 
             this.guna2Elipse2.BorderRadius = 20;
             this.guna2Elipse2.TargetControl = this.DataGridView_Product_Deal;
+            // 
+            // txtNewprice
+            // 
+            this.txtNewprice.AutoRoundedCorners = true;
+            this.txtNewprice.BorderRadius = 17;
+            this.txtNewprice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNewprice.DefaultText = "";
+            this.txtNewprice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNewprice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNewprice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNewprice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNewprice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNewprice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtNewprice.HoverState.BorderColor = System.Drawing.SystemColors.Control;
+            this.txtNewprice.IconRight = global::BTL_ClockManage.Properties.Resources.icons8_update_24;
+            this.txtNewprice.Location = new System.Drawing.Point(184, 31);
+            this.txtNewprice.Name = "txtNewprice";
+            this.txtNewprice.PasswordChar = '\0';
+            this.txtNewprice.PlaceholderText = "New price";
+            this.txtNewprice.SelectedText = "";
+            this.txtNewprice.Size = new System.Drawing.Size(256, 36);
+            this.txtNewprice.TabIndex = 3;
+            this.txtNewprice.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // CF_DealProduct
             // 
@@ -691,11 +690,11 @@ namespace BTL_ClockManage.Views
         private System.Windows.Forms.Label lb_Title;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Button btnNewprice;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView_Product_Deal;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2TextBox txtNewprice;
     }
 }

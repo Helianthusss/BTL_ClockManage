@@ -36,5 +36,17 @@ namespace BTL_ClockManage.Views
         {
 
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Form fm = new Edit_Product();
+            fm.Show();
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            Form fm = new New_Product();
+            fm.Show();
+        }
     }
 }
