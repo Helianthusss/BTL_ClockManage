@@ -30,7 +30,7 @@ namespace BTL_ClockManage.Views
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation5 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(viewHomeManager));
             this.panelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -51,10 +51,14 @@ namespace BTL_ClockManage.Views
             this.panelChildForm = new Guna.UI2.WinForms.Guna2Panel();
             this.DetectMouse = new System.Windows.Forms.Timer(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.submenuReport = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnReportProduct = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnReportBill = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
+            this.submenuReport.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -159,6 +163,7 @@ namespace BTL_ClockManage.Views
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.guna2Panel1.Controls.Add(this.submenuReport);
             this.guna2Panel1.Controls.Add(this.btnAccMana);
             this.guna2Panel1.Controls.Add(this.btnReport);
             this.guna2Panel1.Controls.Add(this.btnProMana);
@@ -194,7 +199,7 @@ namespace BTL_ClockManage.Views
             this.btnAccMana.Image = global::BTL_ClockManage.Properties.Resources.icons8_statistics_30;
             this.btnAccMana.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnAccMana.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAccMana.Location = new System.Drawing.Point(0, 401);
+            this.btnAccMana.Location = new System.Drawing.Point(0, 528);
             this.btnAccMana.Margin = new System.Windows.Forms.Padding(4);
             this.btnAccMana.Name = "btnAccMana";
             this.btnAccMana.PressedColor = System.Drawing.Color.White;
@@ -325,22 +330,22 @@ namespace BTL_ClockManage.Views
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.guna2Transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation1;
+            animation5.AnimateOnlyDifferences = true;
+            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
+            animation5.LeafCoeff = 0F;
+            animation5.MaxTime = 1F;
+            animation5.MinTime = 0F;
+            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
+            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
+            animation5.MosaicSize = 0;
+            animation5.Padding = new System.Windows.Forms.Padding(0);
+            animation5.RotateCoeff = 0F;
+            animation5.RotateLimit = 0F;
+            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
+            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
+            animation5.TimeCoeff = 0F;
+            animation5.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation5;
             // 
             // guna2ControlBox2
             // 
@@ -429,6 +434,84 @@ namespace BTL_ClockManage.Views
             this.guna2Elipse1.BorderRadius = 12;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // submenuReport
+            // 
+            this.submenuReport.Controls.Add(this.btnReportBill);
+            this.submenuReport.Controls.Add(this.btnReportProduct);
+            this.guna2Transition1.SetDecoration(this.submenuReport, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.submenuReport.Location = new System.Drawing.Point(0, 401);
+            this.submenuReport.Name = "submenuReport";
+            this.submenuReport.Size = new System.Drawing.Size(273, 120);
+            this.submenuReport.TabIndex = 0;
+            // 
+            // btnReportProduct
+            // 
+            this.btnReportProduct.Animated = true;
+            this.btnReportProduct.BackColor = System.Drawing.Color.Transparent;
+            this.btnReportProduct.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
+            this.btnReportProduct.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportProduct.CheckedState.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2Transition1.SetDecoration(this.btnReportProduct, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btnReportProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReportProduct.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReportProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReportProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.btnReportProduct.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.btnReportProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnReportProduct.ForeColor = System.Drawing.Color.Black;
+            this.btnReportProduct.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportProduct.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnReportProduct.Image = global::BTL_ClockManage.Properties.Resources.icons8_statistics_30;
+            this.btnReportProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnReportProduct.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnReportProduct.Location = new System.Drawing.Point(28, 1);
+            this.btnReportProduct.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReportProduct.Name = "btnReportProduct";
+            this.btnReportProduct.PressedColor = System.Drawing.Color.White;
+            this.btnReportProduct.Size = new System.Drawing.Size(245, 55);
+            this.btnReportProduct.TabIndex = 8;
+            this.btnReportProduct.Text = "Report";
+            this.btnReportProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnReportProduct.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnReportProduct.UseTransparentBackground = true;
+            this.btnReportProduct.Click += new System.EventHandler(this.btnReportProduct_Click);
+            // 
+            // btnReportBill
+            // 
+            this.btnReportBill.Animated = true;
+            this.btnReportBill.BackColor = System.Drawing.Color.Transparent;
+            this.btnReportBill.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
+            this.btnReportBill.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportBill.CheckedState.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2Transition1.SetDecoration(this.btnReportBill, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.btnReportBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReportBill.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReportBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReportBill.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.btnReportBill.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(103)))), ((int)(((byte)(201)))));
+            this.btnReportBill.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnReportBill.ForeColor = System.Drawing.Color.Black;
+            this.btnReportBill.HoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportBill.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnReportBill.Image = global::BTL_ClockManage.Properties.Resources.icons8_statistics_30;
+            this.btnReportBill.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnReportBill.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnReportBill.Location = new System.Drawing.Point(28, 64);
+            this.btnReportBill.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReportBill.Name = "btnReportBill";
+            this.btnReportBill.PressedColor = System.Drawing.Color.White;
+            this.btnReportBill.Size = new System.Drawing.Size(245, 55);
+            this.btnReportBill.TabIndex = 9;
+            this.btnReportBill.Text = "Report";
+            this.btnReportBill.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnReportBill.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnReportBill.UseTransparentBackground = true;
+            this.btnReportBill.Click += new System.EventHandler(this.btnReportBill_Click);
+            // 
             // viewHomeManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -450,6 +533,7 @@ namespace BTL_ClockManage.Views
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
+            this.submenuReport.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -475,5 +559,8 @@ namespace BTL_ClockManage.Views
         private Guna.UI2.WinForms.Guna2Panel panelChildForm;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
+        private Guna.UI2.WinForms.Guna2Panel submenuReport;
+        private Guna.UI2.WinForms.Guna2GradientButton btnReportBill;
+        private Guna.UI2.WinForms.Guna2GradientButton btnReportProduct;
     }
 }

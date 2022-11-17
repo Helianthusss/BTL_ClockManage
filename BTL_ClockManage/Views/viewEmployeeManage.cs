@@ -125,6 +125,11 @@ namespace BTL_ClockManage.Views
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if(Program.context.HOADONs.Count(n=>n.MANV == txtId.Text) > 0)
+            {
+                MessageBox.Show("Nhân viên tồn tại trong Hóa đơn. Hãy xóa Hóa đơn trước");
+                return;
+            }
             NHANVIEN nv = Program.context.NHANVIENs.FirstOrDefault(n => n.MANV == txtId.Text);
             Program.context.NHANVIENs.Remove(nv);
             Program.context.SaveChanges();
@@ -153,11 +158,6 @@ namespace BTL_ClockManage.Views
             dateTimeIn.Value = (DateTime)tbl.Rows[e.RowIndex].Cells[6].Value;
             salary.Value = (decimal)tbl.Rows[e.RowIndex].Cells[7].Value;
             btnAdd.Hide();
-            if (cbPosition.SelectedItem.ToString() == "Thu ngân")
-            {
-                btnDelete.Hide();
-            }
-            else btnDelete.Show();
         }
 
         private void txtId_MouseClick(object sender, MouseEventArgs e)

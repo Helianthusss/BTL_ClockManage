@@ -39,10 +39,8 @@ namespace BTL_ClockManage.Views
                 }
             }
         }
-
         private void viewHomeManager_Load(object sender, EventArgs e)
         {
-           
         }
         private Form activeForm = null;
         private void openChildForm(Form childForm)
@@ -60,7 +58,6 @@ namespace BTL_ClockManage.Views
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
-           
         }
 
         private void btnProMana_Click(object sender, EventArgs e)
@@ -70,7 +67,7 @@ namespace BTL_ClockManage.Views
 
         private void btnReport_Click(object sender, EventArgs e)
         {
-            openChildForm(new viewReportManage());
+            
         }
 
         private void btnAccMana_Click(object sender, EventArgs e)
@@ -83,6 +80,16 @@ namespace BTL_ClockManage.Views
             viewLogin viewLogin = new viewLogin();
             viewLogin.Show();
             Hide();
+        }
+
+        private void btnReportProduct_Click(object sender, EventArgs e)
+        {
+            openChildForm(new viewReportManage());
+        }
+
+        private void btnReportBill_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
