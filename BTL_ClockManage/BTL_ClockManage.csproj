@@ -380,11 +380,41 @@
     <Compile Include="Models\SANPHAM.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\CF_DealProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CF_DealProduct.Designer.cs">
+      <DependentUpon>CF_DealProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CF_ProcductManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CF_ProcductManage.Designer.cs">
+      <DependentUpon>CF_ProcductManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Edit_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Edit_Product.Designer.cs">
+      <DependentUpon>Edit_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\New_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\New_Product.Designer.cs">
+      <DependentUpon>New_Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\viewAccountManage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\viewAccountManage.Designer.cs">
       <DependentUpon>viewAccountManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewBillReportManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\viewBillReportManage.Designer.cs">
+      <DependentUpon>viewBillReportManage.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\viewEmployeeManage.cs">
       <SubType>Form</SubType>
@@ -435,8 +465,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\CF_DealProduct.resx">
+      <DependentUpon>CF_DealProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CF_ProcductManage.resx">
+      <DependentUpon>CF_ProcductManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Edit_Product.resx">
+      <DependentUpon>Edit_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\New_Product.resx">
+      <DependentUpon>New_Product.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\viewAccountManage.resx">
       <DependentUpon>viewAccountManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\viewBillReportManage.resx">
+      <DependentUpon>viewBillReportManage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewEmployeeManage.resx">
       <DependentUpon>viewEmployeeManage.cs</DependentUpon>

@@ -89,3 +89,8 @@ D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\zxing.presentation.xml
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewAccountManage.resources
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewEmployeeManage.resources
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewReportManage.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.CF_DealProduct.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.CF_ProcductManage.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.Edit_Product.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.New_Product.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewBillReportManage.resources

@@ -135,7 +135,7 @@ namespace BTL_ClockManage.Views
             // 
             // productBarData
             // 
-            this.productBarData.Label = "Bar1";
+            this.productBarData.Label = "Bar chart";
             this.productBarData.TargetChart = this.BarProduct;
             // 
             // productPieData
@@ -219,7 +219,7 @@ namespace BTL_ClockManage.Views
             // 
             this.productLineData.BorderColor = System.Drawing.Color.Empty;
             this.productLineData.FillColor = System.Drawing.Color.Empty;
-            this.productLineData.Label = "Line1";
+            this.productLineData.Label = "Line chart";
             this.productLineData.TargetChart = this.LineProduct;
             // 
             // LineProduct
