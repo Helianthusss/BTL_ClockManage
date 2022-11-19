@@ -69,7 +69,7 @@ namespace BTL_ClockManage.Views
 
         private void txtcode_TextChanged(object sender, EventArgs e)
         {
-            NHANVIEN nv = Program.context.NHANVIENs.FirstOrDefault(n => n.ACCOUNT == txtcode.Text);
+            NHANVIEN nv = Program.context.NHANVIENs.FirstOrDefault(n => n.PASSWORDS == txtcode.Text);
             if (nv != null)
             {
                 switch (nv.MANV.Substring(0, 4))

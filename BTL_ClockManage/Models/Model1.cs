@@ -8,7 +8,7 @@ namespace BTL_ClockManage.Models
     public partial class Model1 : DbContext
     {
         public Model1()
-            : base("name=WatcherModel")
+            : base("name=WatcherData")
         {
         }
 
@@ -95,7 +95,7 @@ namespace BTL_ClockManage.Models
                 .HasPrecision(18, 0);
 
             modelBuilder.Entity<NHANVIEN>()
-                .Property(e => e.ACCOUNT)
+                .Property(e => e.PASSWORDS)
                 .IsUnicode(false);
 
             modelBuilder.Entity<NHANVIEN>()

@@ -89,7 +89,7 @@ namespace BTL_ClockManage.Views
 
         private void btnReportBill_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new viewBillReportManage());
         }
     }
 }

@@ -16,7 +16,7 @@ namespace BTL_ClockManage.Models
         }
 
         [Key]
-        [StringLength(10)]
+        [StringLength(15)]
         public string MASP { get; set; }
 
         [Required]

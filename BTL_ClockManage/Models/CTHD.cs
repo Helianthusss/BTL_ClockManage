@@ -16,7 +16,7 @@ namespace BTL_ClockManage.Models
 
         [Key]
         [Column(Order = 1)]
-        [StringLength(10)]
+        [StringLength(15)]
         public string MASP { get; set; }
 
         public int SOLUONG { get; set; }

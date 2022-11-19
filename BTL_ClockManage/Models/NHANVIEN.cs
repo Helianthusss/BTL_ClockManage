@@ -44,7 +44,7 @@ namespace BTL_ClockManage.Models
         public string DIACHI { get; set; }
 
         [StringLength(10)]
-        public string ACCOUNT { get; set; }
+        public string PASSWORDS { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOADON> HOADONs { get; set; }

@@ -35,20 +35,20 @@ namespace BTL_ClockManage.Views
             List<NHANVIEN> nv = null;
             if (cbPosition.SelectedIndex != -1)
             {
-                nv = Program.context.NHANVIENs.Where(n => n.ACCOUNT != null && n.CHUCVU == cbPosition.SelectedItem.ToString()).OrderBy(n => n.TENNV).ToList();
-            }else nv = Program.context.NHANVIENs.Where(n => n.ACCOUNT != null).OrderBy(n => n.TENNV).ToList();
+                nv = Program.context.NHANVIENs.Where(n => n.PASSWORDS != null && n.CHUCVU == cbPosition.SelectedItem.ToString()).OrderBy(n => n.TENNV).ToList();
+            }else nv = Program.context.NHANVIENs.Where(n => n.PASSWORDS != null).OrderBy(n => n.TENNV).ToList();
             DataTable table = new DataTable();
             table.Columns.Add("Id", typeof(string));
             table.Columns.Add("Tên", typeof(string));
             table.Columns.Add("Chức vụ", typeof(string));
-            table.Columns.Add("Account", typeof(string));
+            table.Columns.Add("Password", typeof(string));
             nv.ForEach(x =>
             {
                 var rowDT = table.NewRow();
                 rowDT["Id"] = x.MANV;
                 rowDT["Tên"] = x.TENNV;
                 rowDT["Chức vụ"] = x.CHUCVU;
-                rowDT["Account"] = x.ACCOUNT;
+                rowDT["Password"] = x.PASSWORDS;
                 table.Rows.Add(rowDT);
             });
             tbl.DataSource = table;
@@ -67,7 +67,7 @@ namespace BTL_ClockManage.Views
             NHANVIEN nv = Program.context.NHANVIENs.FirstOrDefault(n=>n.MANV == cbId.SelectedItem.ToString());
             txtName.Text = nv.TENNV;
             txtPosition.Text = nv.CHUCVU;
-            txtAccount.Text = nv.ACCOUNT;
+            txtAccount.Text = nv.PASSWORDS;
             if (txtAccount.Text == "")
             {
                 btnAdd.Show();
@@ -78,7 +78,7 @@ namespace BTL_ClockManage.Views
         private void btnAdd_Click(object sender, EventArgs e)
         {
             NHANVIEN nv = Program.context.NHANVIENs.FirstOrDefault(n => n.MANV == cbId.SelectedItem.ToString());
-            nv.ACCOUNT = txtAccount.Text;
+            nv.PASSWORDS = txtAccount.Text;
             Program.context.SaveChanges();
             MessageBox.Show("Thêm thành công");
             initTable();
@@ -87,7 +87,7 @@ namespace BTL_ClockManage.Views
         private void btnDelete_Click(object sender, EventArgs e)
         {
             NHANVIEN nv = Program.context.NHANVIENs.FirstOrDefault(n => n.MANV == cbId.SelectedItem.ToString());
-            nv.ACCOUNT = null;
+            nv.PASSWORDS = null;
             Program.context.SaveChanges();
             MessageBox.Show("Xóa thành công");
             initTable();
@@ -96,7 +96,7 @@ namespace BTL_ClockManage.Views
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             NHANVIEN nv = Program.context.NHANVIENs.FirstOrDefault(n => n.MANV == cbId.SelectedItem.ToString());
-            nv.ACCOUNT = txtAccount.Text;
+            nv.PASSWORDS = txtAccount.Text;
             Program.context.SaveChanges();
             MessageBox.Show("Sửa thành công");
             initTable();
