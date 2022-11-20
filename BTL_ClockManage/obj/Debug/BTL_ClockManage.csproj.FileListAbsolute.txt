@@ -94,3 +94,4 @@ D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.CF_ProcductMa
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.Edit_Product.resources
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.New_Product.resources
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewBillReportManage.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewMainHomeManager.resources

@@ -8,7 +8,7 @@ namespace BTL_ClockManage.Models
     public partial class Model1 : DbContext
     {
         public Model1()
-            : base("name=WatcherData")
+            : base("name=Model1")
         {
         }
 
@@ -16,6 +16,7 @@ namespace BTL_ClockManage.Models
         public virtual DbSet<HOADON> HOADONs { get; set; }
         public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
         public virtual DbSet<LOAISANPHAM> LOAISANPHAMs { get; set; }
+        public virtual DbSet<MESSAGE> MESSAGEs { get; set; }
         public virtual DbSet<NHACUNGCAP> NHACUNGCAPs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
         public virtual DbSet<SANPHAM> SANPHAMs { get; set; }
@@ -72,6 +73,14 @@ namespace BTL_ClockManage.Models
                 .HasMany(e => e.SANPHAMs)
                 .WithRequired(e => e.LOAISANPHAM)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<MESSAGE>()
+                .Property(e => e.NGGUI)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<MESSAGE>()
+                .Property(e => e.NGNHAN)
+                .IsUnicode(false);
 
             modelBuilder.Entity<NHACUNGCAP>()
                 .Property(e => e.MANCC)

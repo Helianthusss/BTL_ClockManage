@@ -374,12 +374,18 @@
     <Compile Include="Models\HOADON.cs" />
     <Compile Include="Models\KHACHHANG.cs" />
     <Compile Include="Models\LOAISANPHAM.cs" />
+    <Compile Include="Models\MESSAGE.cs" />
     <Compile Include="Models\Model1.cs" />
     <Compile Include="Models\NHACUNGCAP.cs" />
     <Compile Include="Models\NHANVIEN.cs" />
     <Compile Include="Models\SANPHAM.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Views\CF_DealProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -446,6 +452,12 @@
     <Compile Include="Views\viewLogin.Designer.cs">
       <DependentUpon>viewLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\viewMainHomeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\viewMainHomeManager.Designer.cs">
+      <DependentUpon>viewMainHomeManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\viewReportManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -457,14 +469,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Views\CF_DealProduct.resx">
       <DependentUpon>CF_DealProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -497,6 +504,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewLogin.resx">
       <DependentUpon>viewLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\viewMainHomeManager.resx">
+      <DependentUpon>viewMainHomeManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewReportManage.resx">
       <DependentUpon>viewReportManage.cs</DependentUpon>
@@ -574,6 +584,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-cameras-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bliss_%28Windows_XP%29 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

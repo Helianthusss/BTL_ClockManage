@@ -41,6 +41,7 @@ namespace BTL_ClockManage.Views
         }
         private void viewHomeManager_Load(object sender, EventArgs e)
         {
+            openChildForm(new viewMainHomeManager());
         }
         private Form activeForm = null;
         private void openChildForm(Form childForm)
@@ -58,6 +59,7 @@ namespace BTL_ClockManage.Views
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
+            openChildForm(new viewMainHomeManager());
         }
 
         private void btnProMana_Click(object sender, EventArgs e)
