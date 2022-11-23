@@ -95,3 +95,4 @@ D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.Edit_Product.
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.New_Product.resources
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewBillReportManage.resources
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewMainHomeManager.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewBillPaying.resources

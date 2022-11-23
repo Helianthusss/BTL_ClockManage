@@ -69,7 +69,7 @@ namespace BTL_ClockManage.Views
 
         private void btnReport_Click(object sender, EventArgs e)
         {
-            
+            submenuReport.Visible = true;
         }
 
         private void btnAccMana_Click(object sender, EventArgs e)
@@ -87,11 +87,36 @@ namespace BTL_ClockManage.Views
         private void btnReportProduct_Click(object sender, EventArgs e)
         {
             openChildForm(new viewReportManage());
+            submenuReport.Visible = false;
         }
 
         private void btnReportBill_Click(object sender, EventArgs e)
         {
             openChildForm(new viewBillReportManage());
+            submenuReport.Visible = false;
+        }
+        bool enumExpended2 = false;
+        private void ClickReport_Tick(object sender, EventArgs e)
+        {
+            if (!guna2Transition2.IsCompleted) return;
+            if (panelMenu.ClientRectangle.Contains(PointToClient(Control.MousePosition)))
+            {
+                if (!enumExpended2)
+                {
+                    enumExpended2 = true;
+                    btnAccMana.Height = 2; 
+                }
+            }
+            else
+            {
+                if (enumExpended2)
+                {
+                    enumExpended2 = false;
+                    panelMenu.Visible = false;
+                    panelMenu.Width = 63;
+                    guna2Transition1.Show(panelMenu);
+                }
+            }
         }
     }
 }

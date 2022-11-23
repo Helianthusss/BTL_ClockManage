@@ -19,12 +19,6 @@ namespace BTL_ClockManage.Views
             InitializeComponent();
         }
 
-        private void btnLoad_Click(object sender, EventArgs e)
-        {
-            Program.context.Database.Connection.Close();
-            Program.context.Database.Connection.Open();
-        }
-
         private void viewBillReportManage_Load(object sender, EventArgs e)
         {
             int i = 0;

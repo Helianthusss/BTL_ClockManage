@@ -82,7 +82,6 @@ namespace BTL_ClockManage.Views
             this.productPieData = new Guna.Charts.WinForms.GunaPieDataset();
             this.PieProduct = new Guna.Charts.WinForms.GunaChart();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnLoad = new Guna.UI2.WinForms.Guna2Button();
             this.productLineData = new Guna.Charts.WinForms.GunaLineDataset();
             this.LineProduct = new Guna.Charts.WinForms.GunaChart();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -92,6 +91,7 @@ namespace BTL_ClockManage.Views
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtFind = new Guna.UI2.WinForms.Guna2TextBox();
             this.tblProduct = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.tblProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,26 +195,6 @@ namespace BTL_ClockManage.Views
             this.guna2HtmlLabel1.TabIndex = 2;
             this.guna2HtmlLabel1.Text = "Products Statistic";
             // 
-            // btnLoad
-            // 
-            this.btnLoad.Animated = true;
-            this.btnLoad.BorderRadius = 5;
-            this.btnLoad.BorderThickness = 1;
-            this.btnLoad.DefaultAutoSize = true;
-            this.btnLoad.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLoad.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLoad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLoad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLoad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnLoad.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLoad.ForeColor = System.Drawing.Color.Black;
-            this.btnLoad.Location = new System.Drawing.Point(214, 58);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(113, 34);
-            this.btnLoad.TabIndex = 39;
-            this.btnLoad.Text = "Làm mới";
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
-            // 
             // productLineData
             // 
             this.productLineData.BorderColor = System.Drawing.Color.Empty;
@@ -275,7 +255,7 @@ namespace BTL_ClockManage.Views
             this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(120, 112);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(123, 94);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(234, 36);
             this.guna2HtmlLabel3.TabIndex = 2;
@@ -400,19 +380,28 @@ namespace BTL_ClockManage.Views
             this.tblProduct.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.tblProduct.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.AutoSize = false;
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(443, 979);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(108, 15);
+            this.guna2HtmlLabel6.TabIndex = 48;
+            // 
             // viewReportManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(972, 633);
+            this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.tblProduct);
             this.Controls.Add(this.txtFind);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.cbYear);
             this.Controls.Add(this.cbMonth);
             this.Controls.Add(this.LineProduct);
-            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -424,7 +413,6 @@ namespace BTL_ClockManage.Views
             this.Load += new System.EventHandler(this.viewReportManage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tblProduct)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -435,7 +423,6 @@ namespace BTL_ClockManage.Views
         private Guna.Charts.WinForms.GunaChart PieProduct;
         private Guna.Charts.WinForms.GunaBarDataset productBarData;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button btnLoad;
         private Guna.Charts.WinForms.GunaLineDataset productLineData;
         private Guna.Charts.WinForms.GunaChart LineProduct;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
@@ -445,5 +432,6 @@ namespace BTL_ClockManage.Views
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2TextBox txtFind;
         private Guna.UI2.WinForms.Guna2DataGridView tblProduct;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
     }
 }

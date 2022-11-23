@@ -65,7 +65,7 @@ namespace BTL_ClockManage.Views
             this.panelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(185)))), ((int)(((byte)(227)))));
             this.panelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(126)))), ((int)(((byte)(225)))));
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(84, 681);
             this.panelMenu.TabIndex = 0;
@@ -93,7 +93,7 @@ namespace BTL_ClockManage.Views
             this.guna2GradientButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton2.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2GradientButton2.Location = new System.Drawing.Point(0, 279);
-            this.guna2GradientButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientButton2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.PressedColor = System.Drawing.Color.White;
             this.guna2GradientButton2.Size = new System.Drawing.Size(273, 55);
@@ -127,7 +127,7 @@ namespace BTL_ClockManage.Views
             this.guna2GradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton1.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2GradientButton1.Location = new System.Drawing.Point(0, 213);
-            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.PressedColor = System.Drawing.Color.White;
             this.guna2GradientButton1.Size = new System.Drawing.Size(273, 55);
@@ -147,7 +147,7 @@ namespace BTL_ClockManage.Views
             this.guna2PictureBox1.Image = global::BTL_ClockManage.Properties.Resources.icons8_watches_front_view_50;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(84, 85);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -186,7 +186,7 @@ namespace BTL_ClockManage.Views
             this.guna2Transition1.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(84, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(267, 681);
             this.guna2Panel1.TabIndex = 1;
@@ -214,7 +214,7 @@ namespace BTL_ClockManage.Views
             this.guna2GradientButton5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton5.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2GradientButton5.Location = new System.Drawing.Point(0, 338);
-            this.guna2GradientButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientButton5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientButton5.Name = "guna2GradientButton5";
             this.guna2GradientButton5.PressedColor = System.Drawing.Color.White;
             this.guna2GradientButton5.Size = new System.Drawing.Size(273, 55);
@@ -247,7 +247,7 @@ namespace BTL_ClockManage.Views
             this.guna2GradientButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton4.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2GradientButton4.Location = new System.Drawing.Point(0, 276);
-            this.guna2GradientButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientButton4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
             this.guna2GradientButton4.PressedColor = System.Drawing.Color.White;
             this.guna2GradientButton4.Size = new System.Drawing.Size(273, 55);
@@ -256,6 +256,7 @@ namespace BTL_ClockManage.Views
             this.guna2GradientButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton4.TextOffset = new System.Drawing.Point(20, 0);
             this.guna2GradientButton4.UseTransparentBackground = true;
+            this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
             // 
             // guna2GradientButton3
             // 
@@ -280,7 +281,7 @@ namespace BTL_ClockManage.Views
             this.guna2GradientButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton3.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2GradientButton3.Location = new System.Drawing.Point(1, 214);
-            this.guna2GradientButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientButton3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
             this.guna2GradientButton3.PressedColor = System.Drawing.Color.White;
             this.guna2GradientButton3.Size = new System.Drawing.Size(273, 55);
@@ -296,7 +297,7 @@ namespace BTL_ClockManage.Views
             this.guna2Transition1.SetDecoration(this.guna2HtmlLabel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(8, 27);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(103, 22);
             this.guna2HtmlLabel2.TabIndex = 2;
@@ -310,7 +311,7 @@ namespace BTL_ClockManage.Views
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox2.Location = new System.Drawing.Point(1261, 2);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(60, 36);
             this.guna2ControlBox2.TabIndex = 11;
@@ -323,7 +324,7 @@ namespace BTL_ClockManage.Views
             this.guna2ControlBox3.FillColor = System.Drawing.Color.White;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBox3.Location = new System.Drawing.Point(1203, 2);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(60, 36);
             this.guna2ControlBox3.TabIndex = 13;
@@ -336,7 +337,7 @@ namespace BTL_ClockManage.Views
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(184)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(351, 0);
-            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(972, 48);
             this.guna2GradientPanel1.TabIndex = 14;
@@ -347,7 +348,7 @@ namespace BTL_ClockManage.Views
             this.guna2Transition1.SetDecoration(this.guna2HtmlLabel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(445, 15);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(94, 23);
             this.guna2HtmlLabel1.TabIndex = 0;
@@ -358,7 +359,7 @@ namespace BTL_ClockManage.Views
             this.guna2Transition1.SetDecoration(this.panelChildForm, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(351, 48);
-            this.panelChildForm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelChildForm.Margin = new System.Windows.Forms.Padding(4);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(972, 633);
             this.panelChildForm.TabIndex = 15;
@@ -386,7 +387,7 @@ namespace BTL_ClockManage.Views
             this.Controls.Add(this.panelMenu);
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "viewHomeStaff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "viewHomeStaff";

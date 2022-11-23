@@ -62,7 +62,6 @@ namespace BTL_ClockManage.Views
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnLoad = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.incomeBar = new Guna.Charts.WinForms.GunaChart();
             this.incomeBarData = new Guna.Charts.WinForms.GunaHorizontalBarDataset();
@@ -74,28 +73,9 @@ namespace BTL_ClockManage.Views
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tblBill = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.tblBill)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnLoad
-            // 
-            this.btnLoad.Animated = true;
-            this.btnLoad.BorderRadius = 5;
-            this.btnLoad.BorderThickness = 1;
-            this.btnLoad.DefaultAutoSize = true;
-            this.btnLoad.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLoad.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLoad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLoad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLoad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnLoad.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLoad.ForeColor = System.Drawing.Color.Black;
-            this.btnLoad.Location = new System.Drawing.Point(414, 58);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(113, 34);
-            this.btnLoad.TabIndex = 41;
-            this.btnLoad.Text = "Làm mới";
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -115,7 +95,7 @@ namespace BTL_ClockManage.Views
             this.incomeBarData});
             chartFont1.FontName = "Arial";
             this.incomeBar.Legend.LabelFont = chartFont1;
-            this.incomeBar.Location = new System.Drawing.Point(12, 159);
+            this.incomeBar.Location = new System.Drawing.Point(12, 127);
             this.incomeBar.Name = "incomeBar";
             this.incomeBar.Size = new System.Drawing.Size(515, 260);
             this.incomeBar.TabIndex = 42;
@@ -161,7 +141,7 @@ namespace BTL_ClockManage.Views
             this.cbYear.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbYear.ItemHeight = 30;
-            this.cbYear.Location = new System.Drawing.Point(12, 107);
+            this.cbYear.Location = new System.Drawing.Point(12, 75);
             this.cbYear.Name = "cbYear";
             this.cbYear.Size = new System.Drawing.Size(166, 36);
             this.cbYear.TabIndex = 44;
@@ -178,7 +158,7 @@ namespace BTL_ClockManage.Views
             this.cbMonth.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbMonth.ItemHeight = 30;
-            this.cbMonth.Location = new System.Drawing.Point(263, 107);
+            this.cbMonth.Location = new System.Drawing.Point(263, 75);
             this.cbMonth.Name = "cbMonth";
             this.cbMonth.Size = new System.Drawing.Size(166, 36);
             this.cbMonth.TabIndex = 43;
@@ -191,7 +171,7 @@ namespace BTL_ClockManage.Views
             this.incomePolarData});
             chartFont9.FontName = "Arial";
             this.incomePolar.Legend.LabelFont = chartFont9;
-            this.incomePolar.Location = new System.Drawing.Point(533, 159);
+            this.incomePolar.Location = new System.Drawing.Point(533, 127);
             this.incomePolar.Name = "incomePolar";
             this.incomePolar.Size = new System.Drawing.Size(407, 260);
             this.incomePolar.TabIndex = 45;
@@ -241,7 +221,7 @@ namespace BTL_ClockManage.Views
             this.txtSum.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSum.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSum.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSum.Location = new System.Drawing.Point(771, 107);
+            this.txtSum.Location = new System.Drawing.Point(771, 75);
             this.txtSum.Name = "txtSum";
             this.txtSum.PasswordChar = '\0';
             this.txtSum.PlaceholderText = "";
@@ -255,7 +235,7 @@ namespace BTL_ClockManage.Views
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(716, 119);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(716, 87);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(71, 24);
             this.guna2HtmlLabel2.TabIndex = 47;
@@ -284,12 +264,12 @@ namespace BTL_ClockManage.Views
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.tblBill.DefaultCellStyle = dataGridViewCellStyle3;
             this.tblBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.tblBill.Location = new System.Drawing.Point(12, 483);
+            this.tblBill.Location = new System.Drawing.Point(12, 451);
             this.tblBill.Name = "tblBill";
             this.tblBill.RowHeadersVisible = false;
             this.tblBill.RowHeadersWidth = 51;
             this.tblBill.RowTemplate.Height = 24;
-            this.tblBill.Size = new System.Drawing.Size(928, 270);
+            this.tblBill.Size = new System.Drawing.Size(928, 246);
             this.tblBill.TabIndex = 48;
             this.tblBill.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.tblBill.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -326,11 +306,20 @@ namespace BTL_ClockManage.Views
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(782, 443);
+            this.guna2Button1.Location = new System.Drawing.Point(782, 411);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(144, 34);
             this.guna2Button1.TabIndex = 49;
             this.guna2Button1.Text = "Xóa hóa đơn";
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.AutoSize = false;
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(434, 703);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(108, 15);
+            this.guna2HtmlLabel6.TabIndex = 50;
             // 
             // viewBillReportManage
             // 
@@ -338,6 +327,7 @@ namespace BTL_ClockManage.Views
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(972, 633);
+            this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.tblBill);
             this.Controls.Add(this.txtSum);
@@ -345,7 +335,6 @@ namespace BTL_ClockManage.Views
             this.Controls.Add(this.cbYear);
             this.Controls.Add(this.cbMonth);
             this.Controls.Add(this.incomeBar);
-            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -359,8 +348,6 @@ namespace BTL_ClockManage.Views
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Button btnLoad;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.Charts.WinForms.GunaChart incomeBar;
         private Guna.UI2.WinForms.Guna2ComboBox cbYear;
@@ -372,5 +359,6 @@ namespace BTL_ClockManage.Views
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2DataGridView tblBill;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
     }
 }

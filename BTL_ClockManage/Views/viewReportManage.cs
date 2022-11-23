@@ -93,11 +93,6 @@ namespace BTL_ClockManage.Views
                 productLineData.DataPoints.Add(id[i], amount[i]);
             }
         }
-        private void btnLoad_Click(object sender, EventArgs e)
-        {
-            Program.context.Database.Connection.Close();
-            Program.context.Database.Connection.Open();
-        }
 
         private void cbYear_SelectedIndexChanged(object sender, EventArgs e)
         {

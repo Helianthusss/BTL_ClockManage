@@ -416,6 +416,12 @@
     <Compile Include="Views\viewAccountManage.Designer.cs">
       <DependentUpon>viewAccountManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\viewBillPaying.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\viewBillPaying.Designer.cs">
+      <DependentUpon>viewBillPaying.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\viewBillReportManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -486,6 +492,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewAccountManage.resx">
       <DependentUpon>viewAccountManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\viewBillPaying.resx">
+      <DependentUpon>viewBillPaying.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewBillReportManage.resx">
       <DependentUpon>viewBillReportManage.cs</DependentUpon>
@@ -587,6 +596,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Bliss_%28Windows_XP%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-account-30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
