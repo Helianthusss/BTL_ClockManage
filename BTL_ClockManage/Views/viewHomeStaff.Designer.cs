@@ -290,6 +290,7 @@ namespace BTL_ClockManage.Views
             this.guna2GradientButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2GradientButton3.TextOffset = new System.Drawing.Point(20, 0);
             this.guna2GradientButton3.UseTransparentBackground = true;
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // guna2HtmlLabel2
             // 

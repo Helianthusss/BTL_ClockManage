@@ -29,12 +29,12 @@ namespace BTL_ClockManage.Views
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtId = new Guna.UI2.WinForms.Guna2TextBox();
@@ -49,22 +49,18 @@ namespace BTL_ClockManage.Views
             this.txtName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.SL = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtProductId = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtAmount = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnUpdate = new Guna.UI2.WinForms.Guna2GradientButton();
             this.tblBill = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnCreateBill = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnDeleteBill = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnSaveBill = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.bntPrintBill = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtFind = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnStart = new Guna.UI2.WinForms.Guna2GradientButton();
             this.barcode = new Guna.UI2.WinForms.Guna2TextBox();
+            this.nudAmount = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.txtSum = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblBillDetail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblBill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAmount)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -105,9 +101,11 @@ namespace BTL_ClockManage.Views
             this.txtId.Name = "txtId";
             this.txtId.PasswordChar = '\0';
             this.txtId.PlaceholderText = "";
+            this.txtId.ReadOnly = true;
             this.txtId.SelectedText = "";
             this.txtId.Size = new System.Drawing.Size(87, 36);
             this.txtId.TabIndex = 33;
+            this.txtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtId_KeyDown);
             // 
             // guna2HtmlLabel2
             // 
@@ -136,6 +134,7 @@ namespace BTL_ClockManage.Views
             this.txtTime.Name = "txtTime";
             this.txtTime.PasswordChar = '\0';
             this.txtTime.PlaceholderText = "";
+            this.txtTime.ReadOnly = true;
             this.txtTime.SelectedText = "";
             this.txtTime.Size = new System.Drawing.Size(271, 36);
             this.txtTime.TabIndex = 33;
@@ -212,29 +211,31 @@ namespace BTL_ClockManage.Views
             this.pic.TabIndex = 37;
             this.pic.TabStop = false;
             this.pic.UseTransparentBackground = true;
+            this.pic.Click += new System.EventHandler(this.pic_Click);
+            this.pic.DoubleClick += new System.EventHandler(this.pic_DoubleClick);
             // 
             // tblBillDetail
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.tblBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            this.tblBillDetail.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblBillDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.tblBillDetail.ColumnHeadersHeight = 19;
             this.tblBillDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tblBillDetail.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tblBillDetail.DefaultCellStyle = dataGridViewCellStyle21;
             this.tblBillDetail.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.tblBillDetail.Location = new System.Drawing.Point(491, 187);
             this.tblBillDetail.Name = "tblBillDetail";
@@ -264,6 +265,8 @@ namespace BTL_ClockManage.Views
             this.tblBillDetail.ThemeStyle.RowsStyle.Height = 24;
             this.tblBillDetail.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.tblBillDetail.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.tblBillDetail.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblBillDetail_CellContentClick);
+            this.tblBillDetail.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tblBillDetail_KeyDown);
             // 
             // txtName
             // 
@@ -308,89 +311,30 @@ namespace BTL_ClockManage.Views
             this.txtProductId.Size = new System.Drawing.Size(158, 36);
             this.txtProductId.TabIndex = 33;
             // 
-            // txtAmount
-            // 
-            this.txtAmount.BorderRadius = 5;
-            this.txtAmount.BorderThickness = 2;
-            this.txtAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAmount.DefaultText = "";
-            this.txtAmount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAmount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAmount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAmount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAmount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAmount.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAmount.Location = new System.Drawing.Point(839, 134);
-            this.txtAmount.Name = "txtAmount";
-            this.txtAmount.PasswordChar = '\0';
-            this.txtAmount.PlaceholderText = "";
-            this.txtAmount.SelectedText = "";
-            this.txtAmount.Size = new System.Drawing.Size(104, 36);
-            this.txtAmount.TabIndex = 33;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Animated = true;
-            this.btnDelete.AutoRoundedCorners = true;
-            this.btnDelete.BorderRadius = 21;
-            this.btnDelete.BorderThickness = 1;
-            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(839, 499);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(105, 45);
-            this.btnDelete.TabIndex = 46;
-            this.btnDelete.Text = "Xóa";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Animated = true;
-            this.btnUpdate.AutoRoundedCorners = true;
-            this.btnUpdate.BorderRadius = 21;
-            this.btnUpdate.BorderThickness = 1;
-            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdate.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(491, 499);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(105, 45);
-            this.btnUpdate.TabIndex = 45;
-            this.btnUpdate.Text = "Sửa";
-            // 
             // tblBill
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.tblBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tblBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            this.tblBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tblBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.tblBill.ColumnHeadersHeight = 19;
             this.tblBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tblBill.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tblBill.DefaultCellStyle = dataGridViewCellStyle24;
             this.tblBill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.tblBill.Location = new System.Drawing.Point(12, 725);
+            this.tblBill.Location = new System.Drawing.Point(12, 632);
             this.tblBill.Name = "tblBill";
             this.tblBill.RowHeadersVisible = false;
             this.tblBill.RowHeadersWidth = 51;
@@ -418,101 +362,24 @@ namespace BTL_ClockManage.Views
             this.tblBill.ThemeStyle.RowsStyle.Height = 24;
             this.tblBill.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.tblBill.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.tblBill.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tblBill_CellContentClick);
             // 
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.AutoSize = false;
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(426, 1002);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(426, 909);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(108, 15);
             this.guna2HtmlLabel6.TabIndex = 47;
             this.guna2HtmlLabel6.Text = null;
-            // 
-            // btnCreateBill
-            // 
-            this.btnCreateBill.Animated = true;
-            this.btnCreateBill.AutoRoundedCorners = true;
-            this.btnCreateBill.BorderRadius = 21;
-            this.btnCreateBill.BorderThickness = 1;
-            this.btnCreateBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCreateBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCreateBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCreateBill.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCreateBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCreateBill.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnCreateBill.ForeColor = System.Drawing.Color.White;
-            this.btnCreateBill.Location = new System.Drawing.Point(13, 573);
-            this.btnCreateBill.Name = "btnCreateBill";
-            this.btnCreateBill.Size = new System.Drawing.Size(177, 45);
-            this.btnCreateBill.TabIndex = 45;
-            this.btnCreateBill.Text = "Tạo hóa đơn";
-            this.btnCreateBill.Click += new System.EventHandler(this.btnCreateBill_Click);
-            // 
-            // btnDeleteBill
-            // 
-            this.btnDeleteBill.Animated = true;
-            this.btnDeleteBill.AutoRoundedCorners = true;
-            this.btnDeleteBill.BorderRadius = 21;
-            this.btnDeleteBill.BorderThickness = 1;
-            this.btnDeleteBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeleteBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteBill.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeleteBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteBill.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnDeleteBill.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteBill.Location = new System.Drawing.Point(539, 573);
-            this.btnDeleteBill.Name = "btnDeleteBill";
-            this.btnDeleteBill.Size = new System.Drawing.Size(177, 45);
-            this.btnDeleteBill.TabIndex = 45;
-            this.btnDeleteBill.Text = "Xóa hóa đơn";
-            // 
-            // btnSaveBill
-            // 
-            this.btnSaveBill.Animated = true;
-            this.btnSaveBill.AutoRoundedCorners = true;
-            this.btnSaveBill.BorderRadius = 21;
-            this.btnSaveBill.BorderThickness = 1;
-            this.btnSaveBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSaveBill.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSaveBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSaveBill.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnSaveBill.ForeColor = System.Drawing.Color.White;
-            this.btnSaveBill.Location = new System.Drawing.Point(270, 573);
-            this.btnSaveBill.Name = "btnSaveBill";
-            this.btnSaveBill.Size = new System.Drawing.Size(175, 45);
-            this.btnSaveBill.TabIndex = 45;
-            this.btnSaveBill.Text = "Lưu hóa đơn";
-            this.btnSaveBill.Click += new System.EventHandler(this.btnSaveBill_Click);
-            // 
-            // bntPrintBill
-            // 
-            this.bntPrintBill.Animated = true;
-            this.bntPrintBill.AutoRoundedCorners = true;
-            this.bntPrintBill.BorderRadius = 21;
-            this.bntPrintBill.BorderThickness = 1;
-            this.bntPrintBill.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bntPrintBill.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bntPrintBill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bntPrintBill.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bntPrintBill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bntPrintBill.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.bntPrintBill.ForeColor = System.Drawing.Color.White;
-            this.bntPrintBill.Location = new System.Drawing.Point(785, 573);
-            this.bntPrintBill.Name = "bntPrintBill";
-            this.bntPrintBill.Size = new System.Drawing.Size(159, 45);
-            this.bntPrintBill.TabIndex = 45;
-            this.bntPrintBill.Text = "In hóa đơn";
             // 
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.AutoSize = false;
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(255, 657);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(255, 564);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(506, 40);
             this.guna2HtmlLabel7.TabIndex = 19;
@@ -531,33 +398,14 @@ namespace BTL_ClockManage.Views
             this.txtFind.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtFind.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFind.IconLeft = global::BTL_ClockManage.Properties.Resources.icons8_search_20;
-            this.txtFind.Location = new System.Drawing.Point(767, 683);
+            this.txtFind.Location = new System.Drawing.Point(767, 590);
             this.txtFind.Name = "txtFind";
             this.txtFind.PasswordChar = '\0';
             this.txtFind.PlaceholderText = "";
             this.txtFind.SelectedText = "";
             this.txtFind.Size = new System.Drawing.Size(169, 36);
             this.txtFind.TabIndex = 48;
-            // 
-            // btnStart
-            // 
-            this.btnStart.Animated = true;
-            this.btnStart.AutoRoundedCorners = true;
-            this.btnStart.BorderRadius = 21;
-            this.btnStart.BorderThickness = 1;
-            this.btnStart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnStart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnStart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnStart.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnStart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnStart.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btnStart.ForeColor = System.Drawing.Color.White;
-            this.btnStart.Location = new System.Drawing.Point(13, 499);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(105, 45);
-            this.btnStart.TabIndex = 45;
-            this.btnStart.Text = "&Start";
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.txtFind.TextChanged += new System.EventHandler(this.txtFind_TextChanged);
             // 
             // barcode
             // 
@@ -584,34 +432,74 @@ namespace BTL_ClockManage.Views
             this.barcode.TabIndex = 33;
             this.barcode.TextChanged += new System.EventHandler(this.barcode_TextChanged);
             // 
+            // nudAmount
+            // 
+            this.nudAmount.BackColor = System.Drawing.Color.Transparent;
+            this.nudAmount.BorderRadius = 5;
+            this.nudAmount.BorderThickness = 2;
+            this.nudAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nudAmount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.nudAmount.Location = new System.Drawing.Point(839, 134);
+            this.nudAmount.Name = "nudAmount";
+            this.nudAmount.Size = new System.Drawing.Size(100, 36);
+            this.nudAmount.TabIndex = 49;
+            this.nudAmount.ValueChanged += new System.EventHandler(this.nudAmount_ValueChanged);
+            // 
+            // txtSum
+            // 
+            this.txtSum.BorderRadius = 5;
+            this.txtSum.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSum.DefaultText = "";
+            this.txtSum.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSum.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSum.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSum.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSum.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSum.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSum.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSum.Location = new System.Drawing.Point(786, 499);
+            this.txtSum.Name = "txtSum";
+            this.txtSum.PasswordChar = '\0';
+            this.txtSum.PlaceholderText = "";
+            this.txtSum.ReadOnly = true;
+            this.txtSum.SelectedText = "";
+            this.txtSum.Size = new System.Drawing.Size(158, 36);
+            this.txtSum.TabIndex = 33;
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.AutoSize = false;
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(725, 511);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(87, 24);
+            this.guna2HtmlLabel8.TabIndex = 26;
+            this.guna2HtmlLabel8.Text = "Tổng:";
+            // 
             // viewBillPaying
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(993, 633);
+            this.ClientSize = new System.Drawing.Size(972, 633);
+            this.Controls.Add(this.nudAmount);
             this.Controls.Add(this.txtFind);
             this.Controls.Add(this.guna2HtmlLabel6);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.bntPrintBill);
-            this.Controls.Add(this.btnDeleteBill);
-            this.Controls.Add(this.btnSaveBill);
-            this.Controls.Add(this.btnCreateBill);
-            this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.tblBill);
             this.Controls.Add(this.tblBillDetail);
             this.Controls.Add(this.pic);
             this.Controls.Add(this.cbCamera);
             this.Controls.Add(this.cbStatus);
             this.Controls.Add(this.txtTime);
-            this.Controls.Add(this.txtAmount);
+            this.Controls.Add(this.txtSum);
             this.Controls.Add(this.txtProductId);
             this.Controls.Add(this.barcode);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.SL);
+            this.Controls.Add(this.guna2HtmlLabel8);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel3);
@@ -625,6 +513,7 @@ namespace BTL_ClockManage.Views
             ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblBillDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblBill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAmount)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -645,18 +534,13 @@ namespace BTL_ClockManage.Views
         private Guna.UI2.WinForms.Guna2HtmlLabel txtName;
         private Guna.UI2.WinForms.Guna2HtmlLabel SL;
         private Guna.UI2.WinForms.Guna2TextBox txtProductId;
-        private Guna.UI2.WinForms.Guna2TextBox txtAmount;
-        private Guna.UI2.WinForms.Guna2GradientButton btnDelete;
-        private Guna.UI2.WinForms.Guna2GradientButton btnUpdate;
         private Guna.UI2.WinForms.Guna2DataGridView tblBill;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2GradientButton btnCreateBill;
-        private Guna.UI2.WinForms.Guna2GradientButton btnDeleteBill;
-        private Guna.UI2.WinForms.Guna2GradientButton btnSaveBill;
-        private Guna.UI2.WinForms.Guna2GradientButton bntPrintBill;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2TextBox txtFind;
-        private Guna.UI2.WinForms.Guna2GradientButton btnStart;
         private Guna.UI2.WinForms.Guna2TextBox barcode;
+        private Guna.UI2.WinForms.Guna2NumericUpDown nudAmount;
+        private Guna.UI2.WinForms.Guna2TextBox txtSum;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
     }
 }

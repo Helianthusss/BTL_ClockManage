@@ -10,10 +10,7 @@ namespace BTL_ClockManage
     static class Program
     {
         public static Model1 context = new Model1();
-        public static void connectAgain()
-        {
-
-        }
+        public static String connectionString = @"Data Source=FATS\SQLEXPRESS;Initial Catalog=QUANLYCUAHANGDH;Persist Security Info=True;User ID=sa;Password=phat12112002";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

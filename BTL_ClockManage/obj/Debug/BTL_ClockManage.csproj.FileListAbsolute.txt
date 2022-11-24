@@ -96,3 +96,10 @@ D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.New_Product.r
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewBillReportManage.resources
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewMainHomeManager.resources
 D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewBillPaying.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\BTL_ClockManage.Views.viewBillPrint.resources
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\RdlCompile.cache
+D:\BTL_ClockManage\BTL_ClockManage\obj\Debug\RdlCompile.compiled
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\BTL_ClockManage\BTL_ClockManage\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll

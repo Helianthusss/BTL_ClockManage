@@ -81,5 +81,10 @@ namespace BTL_ClockManage.Views
         {
             openChildForm(new viewBillPaying());
         }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            openChildForm(new viewMainHomeManager());
+        }
     }
 }
