@@ -86,5 +86,69 @@ namespace BTL_ClockManage.Views
         {
             openChildForm(new viewMainHomeManager());
         }
+        private Guna.UI2.WinForms.Guna2GradientButton buttonHienHanh;
+        private void voHieuHoaButton(Guna.UI2.WinForms.Guna2Panel panel)
+        {
+            foreach (Control truocButton in panel.Controls)
+            {
+                if (truocButton.GetType() == typeof(Guna.UI2.WinForms.Guna2GradientButton))
+                {
+                    Guna.UI2.WinForms.Guna2GradientButton a;
+                    a = (Guna.UI2.WinForms.Guna2GradientButton)truocButton;
+                    truocButton.ForeColor = Color.Black;
+                    a.FillColor = Color.FromArgb(85, 103, 201);
+                    a.FillColor2 = Color.FromArgb(85, 103, 201);
+                }
+            }
+        }
+        private void buttonHoatDong(object btnSender, Guna.UI2.WinForms.Guna2Panel panel)
+        {
+            if (btnSender != null)
+            {
+                if (buttonHienHanh != (Guna.UI2.WinForms.Guna2GradientButton)btnSender)
+                {
+                    voHieuHoaButton(panel);
+                    buttonHienHanh = (Guna.UI2.WinForms.Guna2GradientButton)btnSender;
+                    buttonHienHanh.FillColor = Color.FromArgb(72, 87, 171);
+                    buttonHienHanh.FillColor2 = Color.FromArgb(72, 87, 171);
+                    buttonHienHanh.ForeColor = Color.White;
+                }
+            }
+        }
+        private void Close_Menu_ChildStaff()
+        {
+            panelChildForm.Height -= 110;
+            if (panelChildForm.Height == panelChildForm.MinimumSize.Height)
+            {
+                Timer_Staff.Stop();
+            }
+        }
+        private void Show_Child_Form(Form ChildForm)
+        {
+            if (current != null)
+            {
+                current.Close();
+            }
+            current = ChildForm;
+            ChildForm.TopLevel = false;
+            ChildForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(ChildForm);
+            panelChildForm.Tag = ChildForm;
+            panelChildForm.BringToFront();
+            ChildForm.Show();
+
+        }
+        private Form current;
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            Close_Menu_ChildStaff();
+            buttonHoatDong(sender, guna2Panel_Control_Big);
+            Show_Child_Form(new FormReportStaff());
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
